@@ -26,5 +26,11 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"controllers/wode/wode.html",
 		controller:"wodeController"
 	})
+	// .state("tiku.paper",{		//试卷详情
+	// 	url:"/paper",
+ //        templateUrl:"controllers/tiku/paper.html",
+ //        controller:"paperController"
+       
+	// })
 	
 })
