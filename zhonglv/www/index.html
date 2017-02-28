@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="public/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+     <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- <script src="cordova.js"></script> -->
+    <script src="lib/swiper/js/swiper.min.js"></script>
+    <!-- your app's js -->
+    <script src="public/js/index.js"></script>
+    <script src="config/router.js"></script>
+    <script src="component/footer/footerdirect.js"></script>
+   <!--  <script src="js/controllers.js"></script>
+   <script src="js/services.js"></script> -->
+
+
+   <script src="controllers/shouye/shouye.ctr.js"></script>
+   <script src="controllers/kecheng/kecheng.ctr.js"></script>
+  <script src="controllers/tiku/tiku.ctr.js"></script>
+  <script src="controllers/zhishidian/zhishidian.ctr.js"></script>
+  <script src="controllers/wode/wode.ctr.js"></script>
+  </head>
+  <body ng-app="app">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view>
+      <footer-directive></footer-directive>
+    </ion-nav-view>
+  </body>
+</html>
