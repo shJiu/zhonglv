@@ -1,4 +1,5 @@
 @import "reset.css";
+<<<<<<< HEAD
 .content .tiku-content .slidingTabs ul {
   height: 48px;
 }
@@ -93,6 +94,164 @@
 }
 .fr {
   float: right;
+=======
+<<<<<<< HEAD
+.zsd_ss {
+  box-sizing: border-box;
+  height: 80px;
+  border-top: 1px solid #F4F4F4;
+  width: 100%;
+  line-height: 80px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.zsd_ss div {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border: 1px solid #DFDFDF;
+  border-radius: 25px;
+  background: #fff;
+  overflow: hidden;
+  padding-left: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.zsd_ss div input {
+  color: #DFDFDF;
+  width: 88%;
+}
+.zsd_ss div span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../../../img/zsd_ss.jpg") no-repeat center;
+  margin-top: 3px;
+}
+.zsd_ss .zsd_btn_ml {
+  margin-left: 20px;
+  background: #FF9B00;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 25px;
+  border: none;
+}
+.zsd_con {
+  width: 100%;
+}
+.zsd_con h1 {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.zsd_con .zsd_con_list {
+  width: 100%;
+}
+.zsd_con .zsd_con_list ol {
+  width: 100%;
+  background: #F4F4F4;
+}
+.zsd_con .zsd_con_list ol .zsd_con_list_tit {
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  background: url("../../../img/zsd_showjt.jpg") no-repeat right center;
+  background-position: 95% 50%;
+}
+.zsd_con .zsd_con_list ol .hide {
+  background: url("../../../img/zsd_hidejt.jpg") no-repeat right center;
+  background-position: 95% 50%;
+}
+.zsd_con .zsd_con_list ol ul {
+  background: #fff;
+}
+.zsd_con .zsd_con_list ol ul li {
+  line-height: 35px;
+}
+.zsd_con .zsd_con_list ol ul li span {
+  float: right;
+}
+.zsd_con .zsd_con_list ol .ul_hide {
+  display: none;
+=======
+.swiper-container {
+  width: 100%;
+  height: 200px;
+}
+.swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+.nav-menu {
+  width: 100%;
+  display: -webkit-box;
+  padding: 10px 0;
+}
+.nav-menu a {
+  display: block;
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: #353535;
+}
+.nav-menu.grey {
+  background: #f4f4f4;
+}
+.enter {
+  width: 100%;
+}
+.enter h4 {
+  text-align: center;
+  line-height: 50px;
+  color: #353535;
+}
+.enter p {
+  width: 100%;
+}
+.enter p a {
+  display: inline-block;
+  width: 42%;
+  margin: 5px 4%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 20px;
+}
+.enter p a.pink {
+  background: #fef0cb;
+}
+.enter p a.blue {
+  background: #e2f5fc;
+>>>>>>> 77d668fc9da9f009410b4f3fb9494b719b611885
+}
+/* 公共样式 */
+/* color */
+/* background */
+.huiseBg {
+  background: #F4F4F4;
+}
+.chengseBg {
+  background: #FF9B00;
+}
+/* 边框样式 */
+.bor1 {
+  border: 1px solid #FF9B00;
+}
+.bor-rad {
+  border-radius: 50%;
+}
+.bor-bot {
+  border-bottom: #F4F4F4;
+}
+.padTB {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.padLR20 {
+  padding-left: 20px;
+  padding-right: 20px;
+>>>>>>> ce0160dccc1fcd78c47cfe84ff8cadf88d4fea28
 }
 .foot {
   width: 100%;
