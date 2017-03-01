@@ -1,0 +1,229 @@
+.my_photo{
+	width: 100%;
+	height: 135px;
+	background: url('public/images/1.jpg');
+	background: #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+	dl{
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0;
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-box-align:center;
+		-webkit-box-pack:center;
+
+		dt{
+			width: 75px;
+			height: 75px;
+			margin-bottom: 10px;
+			overflow: hidden;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+.my_list{
+	width: 100%;
+	.my_dingdan_list{
+		width: 100%;
+		li{
+			width: 100%;
+			padding:10px 15px;
+			border-bottom: 1px solid @danlanse;
+			p{
+				width: 100%;
+				line-height: 10px;
+				a{
+					color: #333;
+				}
+				span{
+					float: right;
+					b{
+						font-weight:normal;
+						margin-left: 5px;
+						font-size: 12px;
+					}
+				}
+				&:last-child{
+					font-size: 10px;
+					color: #ccc;
+					a{
+						color: #ccc;
+					}
+				}
+			}
+		}
+	}
+	.my_biji_list{
+		width: 100%;
+		li{
+			width:100%;
+			padding: 15px;
+			border-bottom: 1px solid @danlanse;
+			display: -webkit-box;
+			-webkit-box-pack:justify;
+			a{
+				display:block;
+				display: -webkit-box;
+				-webkit-box-orient:vertical;
+				-webkit-line-clamp:1;
+				word-break: break-all;
+				overflow: hidden;
+				width: 80%;
+				color: #666;
+			}
+			span{
+				display: block;
+			}
+		}	
+	}
+	.my_shezhi_list{
+		width: 100%;
+		li{
+			width: 100%;
+			padding: 15px;
+			border-bottom: 1px solid @danlanse;
+
+			a{
+				display: inline-block;
+				width: 30%;
+				color: #333;
+			}
+			input{
+				display: inline;
+				height: 100%;
+				border: 0;
+			}
+			i{
+				font-style:normal;
+			}
+			span{
+				float: right;
+			}
+		}
+	}
+	.my_kuaixun_list{
+		width:100%;
+		li{
+			width: 100%;
+			
+			border-bottom: 1px solid @danlanse;
+			time{
+				display: inline-block;
+				width: 30%;
+				height: 100%;
+				text-align: center;
+				padding: 15px 0 15px 15px;
+				box-sizing: border-box;
+				border-right: 1px solid @danlanse; 
+			}
+			span{
+				display: inline-block;
+				width: 70%;
+				text-align: center;
+			}
+		} 
+	}
+	.kuanxun_detail{
+		width: 100%;
+		p{
+			width: 100%;
+			padding: 20px 0;
+			text-align: center;
+		}
+		article{
+			padding: 10px 20px;
+			line-height: 2;
+			color: #999;
+		}
+	}
+	.my_pinglun_list{
+		width: 100%;
+		box-sizing: border-box;
+		border-bottom: 1px solid #ccc;
+		dl{
+			width: 100%;
+			display: -webkit-box;
+			margin-bottom: 5px;
+			dt{
+				width: 50px;
+				height: 50px;
+				margin-right: 15px;
+				img{
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			dd{
+				time{
+					color: #ccc;
+				}
+			}
+		}
+		article{
+			p{
+				&:last-child{
+					line-height:2;
+					color: #ccc;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+.my_exitbtn{
+	width: 100%;
+	text-align: center;
+	padding:10px 0;
+
+	button{
+		width: 130px;
+		padding:12px 0;
+		color:#fff; 
+		font-size: 12px;
+		border: 0;
+		border-radius: 20px;
+	}
+	.zhuce{
+		padding:10px 0;
+		color:#E5F5FC;	
+		font-size: 12px;
+		border: 0;
+		border-radius: 20px;
+		background: none;
+		border: 1px solid #E5F5FC;	
+		margin-top: 20px;
+	}
+	&.denglu_btns{
+		margin-top: 50px;
+	}
+}
+
+.denglu_page{
+	width: 100%;
+	.denglu_p{
+		width: 100%;
+		height: 44px;
+		border-bottom: 1px solid @danlanse;
+		display: -webkit-box;
+		-webkit-box-pack:justify;
+		-webkit-box-align:center;
+		padding: 5px 20px;
+		input{
+			border: none;
+		}
+		span{
+			display: block;
+			border: 1px solid @danlanse;
+			color: @danlanse;
+			padding: 0 20px;
+			border-radius: 20px;
+		}
+	}
+}

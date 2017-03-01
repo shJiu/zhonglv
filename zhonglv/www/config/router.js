@@ -31,6 +31,56 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"controllers/wode/wode.html",
 		controller:"wodeController"
 	})
+	.state("shezhi",{
+		url:"/shezhi",
+		templateUrl:"controllers/wode/wode_page/shezhi/shezhi.html",
+		controller:"wodeshezhiCtrl"
+	})
+	.state("biji",{
+		url:"/biji",
+		templateUrl:"controllers/wode/wode_page/biji/biji.html",
+		controller:"wodebijiCtrl"
+	})
+	.state("dingdan",{
+		url:"/dingdan",
+		templateUrl:"controllers/wode/wode_page/dingdan/dingdan.html",
+		controller:"wodedingdanCtrl"
+	})
+	.state("kuaixun",{
+		url:"/kuaixun",
+		templateUrl:"controllers/wode/wode_page/kuaixun/kuaixun.html",
+		controller:"wodekuaixunCtrl"
+	})
+
+	.state("kuaixundetail",{
+		url:"/kuaixundetail",
+		templateUrl:"controllers/wode/wode_page/kuaixundetail/kuaixundetail.html",
+		controller:"wodekuaixundetailCtrl"
+	})
+
+	.state("denglu",{
+		url:"/denglu",
+		templateUrl:"controllers/wode/wode_page/denglu/denglu.html",
+		controller:"dengluCtrl"
+	})
+
+	.state("pinglun",{
+		url:"/pinglun",
+		templateUrl:"controllers/wode/wode_page/pinglun/pinglun.html",
+		controller:"wodepinglunCtrl"
+	})
+
+	.state("xiaoxi",{
+		url:"/xiaoxi",
+		templateUrl:"controllers/wode/wode_page/xiaoxi/xiaoxi.html",
+		controller:"wodexiaoxiCtrl"
+	})
+
+	.state("xiugaipwd",{
+		url:"/xiugaipwd",
+		templateUrl:"controllers/wode/wode_page/xiugaipwd/xiugaipwd.html",
+		controller:"wodexiugaipwdCtrl"
+	})
 	.state("zsd",{
 		url:"/zsd",
 		templateUrl:"controllers/zhishidian/zsd/zsd.html",

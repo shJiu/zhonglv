@@ -1,4 +1,14 @@
 @import "reset.css";
+.yindao {
+  width: 100%;
+}
+.yindao a {
+  display: block;
+  width: 100%;
+}
+.yindao a img {
+  width: 100%;
+}
 .content .tiku-content .slidingTabs ul {
   height: 48px;
 }
@@ -220,9 +230,235 @@
 .form-list ul li div:nth-child(2) {
   -webkit-box-flex: 1;
 }
+.my_photo {
+  width: 100%;
+  height: 135px;
+  background: url('public/images/1.jpg');
+  background: #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.my_photo dl {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+.my_photo dl dt {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.my_photo dl dt img {
+  display: block;
+  width: 100%;
+}
+.my_list {
+  width: 100%;
+}
+.my_list .my_dingdan_list {
+  width: 100%;
+}
+.my_list .my_dingdan_list li {
+  width: 100%;
+  padding: 10px 15px;
+  border-bottom: 1px solid #E5F5FC;
+}
+.my_list .my_dingdan_list li p {
+  width: 100%;
+  line-height: 10px;
+}
+.my_list .my_dingdan_list li p a {
+  color: #333;
+}
+.my_list .my_dingdan_list li p span {
+  float: right;
+}
+.my_list .my_dingdan_list li p span b {
+  font-weight: normal;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.my_list .my_dingdan_list li p:last-child {
+  font-size: 10px;
+  color: #ccc;
+}
+.my_list .my_dingdan_list li p:last-child a {
+  color: #ccc;
+}
+.my_list .my_biji_list {
+  width: 100%;
+}
+.my_list .my_biji_list li {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #E5F5FC;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+}
+.my_list .my_biji_list li a {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+  overflow: hidden;
+  width: 80%;
+  color: #666;
+}
+.my_list .my_biji_list li span {
+  display: block;
+}
+.my_list .my_shezhi_list {
+  width: 100%;
+}
+.my_list .my_shezhi_list li {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #E5F5FC;
+}
+.my_list .my_shezhi_list li a {
+  display: inline-block;
+  width: 30%;
+  color: #333;
+}
+.my_list .my_shezhi_list li input {
+  display: inline;
+  height: 100%;
+  border: 0;
+}
+.my_list .my_shezhi_list li i {
+  font-style: normal;
+}
+.my_list .my_shezhi_list li span {
+  float: right;
+}
+.my_list .my_kuaixun_list {
+  width: 100%;
+}
+.my_list .my_kuaixun_list li {
+  width: 100%;
+  border-bottom: 1px solid #E5F5FC;
+}
+.my_list .my_kuaixun_list li time {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  padding: 15px 0 15px 15px;
+  box-sizing: border-box;
+  border-right: 1px solid #E5F5FC;
+}
+.my_list .my_kuaixun_list li span {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+}
+.my_list .kuanxun_detail {
+  width: 100%;
+}
+.my_list .kuanxun_detail p {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.my_list .kuanxun_detail article {
+  padding: 10px 20px;
+  line-height: 2;
+  color: #999;
+}
+.my_list .my_pinglun_list {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+.my_list .my_pinglun_list dl {
+  width: 100%;
+  display: -webkit-box;
+  margin-bottom: 5px;
+}
+.my_list .my_pinglun_list dl dt {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.my_list .my_pinglun_list dl dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.my_list .my_pinglun_list dl dd time {
+  color: #ccc;
+}
+.my_list .my_pinglun_list article p:last-child {
+  line-height: 2;
+  color: #ccc;
+  font-size: 12px;
+}
+.my_exitbtn {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.my_exitbtn button {
+  width: 130px;
+  padding: 12px 0;
+  color: #fff;
+  font-size: 12px;
+  border: 0;
+  border-radius: 20px;
+}
+.my_exitbtn .zhuce {
+  padding: 10px 0;
+  color: #E5F5FC;
+  font-size: 12px;
+  border: 0;
+  border-radius: 20px;
+  background: none;
+  border: 1px solid #E5F5FC;
+  margin-top: 20px;
+}
+.my_exitbtn.denglu_btns {
+  margin-top: 50px;
+}
+.denglu_page {
+  width: 100%;
+}
+.denglu_page .denglu_p {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #E5F5FC;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  padding: 5px 20px;
+}
+.denglu_page .denglu_p input {
+  border: none;
+}
+.denglu_page .denglu_p span {
+  display: block;
+  border: 1px solid #E5F5FC;
+  color: #E5F5FC;
+  padding: 0 20px;
+  border-radius: 20px;
+}
 /* 公共样式 */
 /* color */
 .chengsefont {
+  color: #FF9B00;
+}
+.fontred {
+  color: red;
+}
+.fontlanse {
+  color: #00A0DD;
+}
+.fontchengse {
   color: #FF9B00;
 }
 /* background */
