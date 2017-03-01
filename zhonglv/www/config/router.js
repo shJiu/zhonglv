@@ -1,6 +1,11 @@
 angular.module("app").config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise("/shouye")
 	$stateProvider
+	/*.state("yindao",{
+		url:"/yindao",
+		templateUrl:"controllers/yindao/yindao.html",
+		controller:"yindaoController"
+	})*/
 	.state("shouye",{
 		url:"/shouye",
 		templateUrl:"controllers/shouye/shouye.html",
@@ -25,6 +30,16 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		url:"/wode",
 		templateUrl:"controllers/wode/wode.html",
 		controller:"wodeController"
+	})
+	.state("zsd",{
+		url:"/zsd",
+		templateUrl:"controllers/zhishidian/zsd/zsd.html",
+		controller:"zsdController"
+	})
+	.state("zsd-xq",{
+		url:"/zsd-xq",
+		templateUrl:"controllers/zhishidian/zsd-xq/zsd-xq.html",
+		controller:"zsdxqController"
 	})
 	// .state("tiku.paper",{		//试卷详情
 	// 	url:"/paper",
