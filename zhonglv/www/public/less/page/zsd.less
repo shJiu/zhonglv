@@ -1,0 +1,41 @@
+.content-form{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	display: -webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	input{
+		width: 90%;
+		height: 40px;
+		border-radius: 20px;
+		border: 1px solid #666;
+		padding: 0 10px;
+	}
+}
+.form-list{
+	width:100%;
+	ul{
+		width: 100%;
+		li{
+			width: 100%;
+			display: -webkit-box;
+			-webkit-box-align:center;
+			-webkit-box-pack:center;
+			line-height: 40px;
+			border-bottom: 1px solid #ededed;
+			div{
+				&:nth-child(1){
+					&:before{
+						content:".";
+						font-size: 30px;
+					};
+				};
+				&:nth-child(2){
+					-webkit-box-flex:1;
+				};
+			}
+		}
+	}
+	
+}

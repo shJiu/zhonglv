@@ -1,15 +1,21 @@
 /* 公共样式 */
 /* color */
-@liangchengse: #FF9B00;			//亮橙色	标识色
-@fengse: #FFF1CC;				//淡粉色	首页入口
-@danlanse: #E5F5FC;				//淡蓝色	首页入口
-@lianglanse: #00A0DD;			//亮蓝色	标识色
+
+@liangchengse:#FF9B00;			//亮橙色	标识色
+@fengse:#FFF1CC;				//淡粉色	首页入口
+@danlanse:#E5F5FC;				//淡蓝色	首页入口
+@lianglanse:#00A0DD;			//亮蓝色	标识色
+
+.chengsefont{
+	color:@liangchengse;
+}
+
 /* background */
 .huiseBg{						//需要使用时直接将类写入标签内
-	background:#F4F4F4;			//背景色灰色
+	background-color:#F4F4F4;			//背景色灰色
 }
 .chengseBg{
-	background:#FF9B00;			//选项按钮背景色
+	background-color:#FF9B00;			//选项按钮背景色
 }
 
 /* 边框样式 */
@@ -33,4 +39,11 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.bar-header{
+	background:#fff!important;	
+}
+.fr{
+	float:right;
+}
 @import "base/footer.less";
+
