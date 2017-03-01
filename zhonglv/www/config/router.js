@@ -1,11 +1,11 @@
 angular.module("app").config(function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider.otherwise("/shouye")
+	$urlRouterProvider.otherwise("/yindao")
 	$stateProvider
-	/*.state("yindao",{
+	.state("yindao",{
 		url:"/yindao",
 		templateUrl:"controllers/yindao/yindao.html",
 		controller:"yindaoController"
-	})*/
+	})
 	.state("shouye",{
 		url:"/shouye",
 		templateUrl:"controllers/shouye/shouye.html",
