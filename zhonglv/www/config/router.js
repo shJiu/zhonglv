@@ -21,6 +21,31 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"controllers/kecheng/kecheng.html",
 		controller:"kechengController"
 	})
+	.state("details",{
+		url:"/details",
+		templateUrl:"controllers/kecheng/kecheng/details.html",
+		controller:"kechengController"
+	})
+	.state("kecheng.law",{
+		url:"/kecheng",
+		templateUrl:"controllers/kecheng/kecheng/law.html",
+		controller:"kechengController"
+	})
+	.state("kecheng.judicial",{
+		url:"/kecheng",
+		templateUrl:"controllers/kecheng/kecheng/judicial.html",
+		controller:"kechengController"
+	})
+	.state("kecheng.fashuo",{
+		url:"/kecheng",
+		templateUrl:"controllers/kecheng/kecheng/fashuo.html",
+		controller:"kechengController"
+	})
+	.state("kecheng.tmall",{
+		url:"/kecheng",
+		templateUrl:"controllers/kecheng/kecheng/tmall.html",
+		controller:"kechengController"
+	})
 	.state("wode",{
 		url:"/wode",
 		templateUrl:"controllers/wode/wode.html",
