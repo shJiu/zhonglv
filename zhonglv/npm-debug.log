@@ -1,0 +1,744 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\NodeJs\\node.exe',
+1 verbose cli   'E:\\NodeJs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData gulp-util
+20 silly mapToRegistry name gulp-util
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'gulp-util',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'gulp-util',
+23 silly mapToRegistry   name: 'gulp-util',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+25 verbose request uri https://registry.npmjs.org/gulp-util
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 07:13:59
+28 verbose request id 2c7679444f50af50
+29 verbose etag W/"58ab4c5f-fd7c"
+30 verbose lastModified Mon, 20 Feb 2017 20:06:55 GMT
+31 http request GET https://registry.npmjs.org/gulp-util
+32 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+33 info attempt registry request try #2 at 07:14:09
+34 verbose etag W/"58ab4c5f-fd7c"
+35 verbose lastModified Mon, 20 Feb 2017 20:06:55 GMT
+36 http request GET https://registry.npmjs.org/gulp-util
+37 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+38 info attempt registry request try #3 at 07:15:09
+39 verbose etag W/"58ab4c5f-fd7c"
+40 verbose lastModified Mon, 20 Feb 2017 20:06:55 GMT
+41 http request GET https://registry.npmjs.org/gulp-util
+42 silly get cb [ 304, undefined ]
+43 verbose etag https://registry.npmjs.org/gulp-util from cache
+44 verbose get saving gulp-util to E:\NodeJs\npm_cache\registry.npmjs.org\gulp-util\.cache.json
+45 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+46 silly resolveWithNewModule gulp-util@3.0.8 checking installable status
+47 silly cache add args [ 'gulp-util@^3.0.0', null ]
+48 verbose cache add spec gulp-util@^3.0.0
+49 silly cache add parsed spec Result {
+49 silly cache add   raw: 'gulp-util@^3.0.0',
+49 silly cache add   scope: null,
+49 silly cache add   escapedName: 'gulp-util',
+49 silly cache add   name: 'gulp-util',
+49 silly cache add   rawSpec: '^3.0.0',
+49 silly cache add   spec: '>=3.0.0 <4.0.0',
+49 silly cache add   type: 'range' }
+50 silly addNamed gulp-util@>=3.0.0 <4.0.0
+51 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for gulp-util
+52 silly addNameRange { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: false }
+53 silly mapToRegistry name gulp-util
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'gulp-util',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'gulp-util',
+56 silly mapToRegistry   name: 'gulp-util',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+58 verbose addNameRange registry:https://registry.npmjs.org/gulp-util not in flight; fetching
+59 verbose get https://registry.npmjs.org/gulp-util not expired, no request
+60 silly addNameRange number 2 { name: 'gulp-util', range: '>=3.0.0 <4.0.0', hasData: true }
+61 silly addNameRange versions [ 'gulp-util',
+61 silly addNameRange   [ '0.0.1',
+61 silly addNameRange     '1.0.0',
+61 silly addNameRange     '1.1.0',
+61 silly addNameRange     '1.1.1',
+61 silly addNameRange     '1.2.0',
+61 silly addNameRange     '1.3.0',
+61 silly addNameRange     '2.0.0',
+61 silly addNameRange     '2.1.1',
+61 silly addNameRange     '2.1.2',
+61 silly addNameRange     '2.1.3',
+61 silly addNameRange     '2.1.4',
+61 silly addNameRange     '2.2.0',
+61 silly addNameRange     '2.2.1',
+61 silly addNameRange     '2.2.2',
+61 silly addNameRange     '2.2.3',
+61 silly addNameRange     '2.2.5',
+61 silly addNameRange     '2.2.6',
+61 silly addNameRange     '2.2.7',
+61 silly addNameRange     '2.2.8',
+61 silly addNameRange     '2.2.9',
+61 silly addNameRange     '2.2.10',
+61 silly addNameRange     '2.2.11',
+61 silly addNameRange     '2.2.12',
+61 silly addNameRange     '2.2.13',
+61 silly addNameRange     '2.2.14',
+61 silly addNameRange     '2.2.15',
+61 silly addNameRange     '2.2.16',
+61 silly addNameRange     '2.2.17',
+61 silly addNameRange     '2.2.18',
+61 silly addNameRange     '2.2.19',
+61 silly addNameRange     '2.2.20',
+61 silly addNameRange     '3.0.0',
+61 silly addNameRange     '3.0.1',
+61 silly addNameRange     '3.0.2',
+61 silly addNameRange     '3.0.3',
+61 silly addNameRange     '3.0.4',
+61 silly addNameRange     '3.0.5',
+61 silly addNameRange     '3.0.6',
+61 silly addNameRange     '3.0.7',
+61 silly addNameRange     '3.0.8' ] ]
+62 silly addNamed gulp-util@3.0.8
+63 verbose addNamed "3.0.8" is a plain semver version for gulp-util
+64 silly cache afterAdd gulp-util@3.0.8
+65 verbose afterAdd E:\NodeJs\npm_cache\gulp-util\3.0.8\package\package.json not in flight; writing
+66 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+67 verbose afterAdd E:\NodeJs\npm_cache\gulp-util\3.0.8\package\package.json written
+68 silly fetchNamedPackageData object-assign
+69 silly mapToRegistry name object-assign
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry data Result {
+72 silly mapToRegistry   raw: 'object-assign',
+72 silly mapToRegistry   scope: null,
+72 silly mapToRegistry   escapedName: 'object-assign',
+72 silly mapToRegistry   name: 'object-assign',
+72 silly mapToRegistry   rawSpec: '',
+72 silly mapToRegistry   spec: 'latest',
+72 silly mapToRegistry   type: 'tag' }
+73 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+74 verbose request uri https://registry.npmjs.org/object-assign
+75 verbose request no auth needed
+76 info attempt registry request try #1 at 07:15:09
+77 verbose etag W/"58ab4c69-5cff"
+78 verbose lastModified Mon, 20 Feb 2017 20:07:05 GMT
+79 http request GET https://registry.npmjs.org/object-assign
+80 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+81 info attempt registry request try #2 at 07:15:19
+82 verbose etag W/"58ab4c69-5cff"
+83 verbose lastModified Mon, 20 Feb 2017 20:07:05 GMT
+84 http request GET https://registry.npmjs.org/object-assign
+85 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+86 info attempt registry request try #3 at 07:16:19
+87 verbose etag W/"58ab4c69-5cff"
+88 verbose lastModified Mon, 20 Feb 2017 20:07:05 GMT
+89 http request GET https://registry.npmjs.org/object-assign
+90 silly get cb [ 304, undefined ]
+91 verbose etag https://registry.npmjs.org/object-assign from cache
+92 verbose get saving object-assign to E:\NodeJs\npm_cache\registry.npmjs.org\object-assign\.cache.json
+93 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+94 silly resolveWithNewModule object-assign@3.0.0 checking installable status
+95 silly cache add args [ 'object-assign@^3.0.0', null ]
+96 verbose cache add spec object-assign@^3.0.0
+97 silly cache add parsed spec Result {
+97 silly cache add   raw: 'object-assign@^3.0.0',
+97 silly cache add   scope: null,
+97 silly cache add   escapedName: 'object-assign',
+97 silly cache add   name: 'object-assign',
+97 silly cache add   rawSpec: '^3.0.0',
+97 silly cache add   spec: '>=3.0.0 <4.0.0',
+97 silly cache add   type: 'range' }
+98 silly addNamed object-assign@>=3.0.0 <4.0.0
+99 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for object-assign
+100 silly addNameRange { name: 'object-assign',
+100 silly addNameRange   range: '>=3.0.0 <4.0.0',
+100 silly addNameRange   hasData: false }
+101 silly mapToRegistry name object-assign
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry data Result {
+104 silly mapToRegistry   raw: 'object-assign',
+104 silly mapToRegistry   scope: null,
+104 silly mapToRegistry   escapedName: 'object-assign',
+104 silly mapToRegistry   name: 'object-assign',
+104 silly mapToRegistry   rawSpec: '',
+104 silly mapToRegistry   spec: 'latest',
+104 silly mapToRegistry   type: 'tag' }
+105 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+106 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
+107 verbose get https://registry.npmjs.org/object-assign not expired, no request
+108 silly addNameRange number 2 { name: 'object-assign', range: '>=3.0.0 <4.0.0', hasData: true }
+109 silly addNameRange versions [ 'object-assign',
+109 silly addNameRange   [ '0.1.0',
+109 silly addNameRange     '0.1.1',
+109 silly addNameRange     '0.1.2',
+109 silly addNameRange     '0.2.0',
+109 silly addNameRange     '0.2.1',
+109 silly addNameRange     '0.2.2',
+109 silly addNameRange     '0.3.0',
+109 silly addNameRange     '0.3.1',
+109 silly addNameRange     '0.4.0',
+109 silly addNameRange     '1.0.0',
+109 silly addNameRange     '2.0.0',
+109 silly addNameRange     '3.0.0',
+109 silly addNameRange     '2.1.1',
+109 silly addNameRange     '4.0.0',
+109 silly addNameRange     '4.0.1',
+109 silly addNameRange     '4.1.0',
+109 silly addNameRange     '4.1.1' ] ]
+110 silly addNamed object-assign@3.0.0
+111 verbose addNamed "3.0.0" is a plain semver version for object-assign
+112 silly cache afterAdd object-assign@3.0.0
+113 verbose afterAdd E:\NodeJs\npm_cache\object-assign\3.0.0\package\package.json not in flight; writing
+114 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+115 verbose afterAdd E:\NodeJs\npm_cache\object-assign\3.0.0\package\package.json written
+116 silly fetchNamedPackageData gulp-util
+117 silly mapToRegistry name gulp-util
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry data Result {
+120 silly mapToRegistry   raw: 'gulp-util',
+120 silly mapToRegistry   scope: null,
+120 silly mapToRegistry   escapedName: 'gulp-util',
+120 silly mapToRegistry   name: 'gulp-util',
+120 silly mapToRegistry   rawSpec: '',
+120 silly mapToRegistry   spec: 'latest',
+120 silly mapToRegistry   type: 'tag' }
+121 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+122 silly resolveWithNewModule gulp-util@3.0.8 checking installable status
+123 silly fetchNamedPackageData object-assign
+124 silly mapToRegistry name object-assign
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'object-assign',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   escapedName: 'object-assign',
+127 silly mapToRegistry   name: 'object-assign',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+129 silly resolveWithNewModule object-assign@3.0.0 checking installable status
+130 silly fetchNamedPackageData through2
+131 silly mapToRegistry name through2
+132 silly mapToRegistry using default registry
+133 silly mapToRegistry registry https://registry.npmjs.org/
+134 silly mapToRegistry data Result {
+134 silly mapToRegistry   raw: 'through2',
+134 silly mapToRegistry   scope: null,
+134 silly mapToRegistry   escapedName: 'through2',
+134 silly mapToRegistry   name: 'through2',
+134 silly mapToRegistry   rawSpec: '',
+134 silly mapToRegistry   spec: 'latest',
+134 silly mapToRegistry   type: 'tag' }
+135 silly mapToRegistry uri https://registry.npmjs.org/through2
+136 verbose request uri https://registry.npmjs.org/through2
+137 verbose request no auth needed
+138 info attempt registry request try #1 at 07:16:20
+139 verbose etag W/"58893721-a8c2"
+140 verbose lastModified Wed, 25 Jan 2017 23:39:13 GMT
+141 http request GET https://registry.npmjs.org/through2
+142 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+143 info attempt registry request try #2 at 07:16:30
+144 verbose etag W/"58893721-a8c2"
+145 verbose lastModified Wed, 25 Jan 2017 23:39:13 GMT
+146 http request GET https://registry.npmjs.org/through2
+147 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+148 info attempt registry request try #3 at 07:17:30
+149 verbose etag W/"58893721-a8c2"
+150 verbose lastModified Wed, 25 Jan 2017 23:39:13 GMT
+151 http request GET https://registry.npmjs.org/through2
+152 silly get cb [ 304, undefined ]
+153 verbose etag https://registry.npmjs.org/through2 from cache
+154 verbose get saving through2 to E:\NodeJs\npm_cache\registry.npmjs.org\through2\.cache.json
+155 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+156 silly resolveWithNewModule through2@2.0.3 checking installable status
+157 silly cache add args [ 'through2@^2.0.0', null ]
+158 verbose cache add spec through2@^2.0.0
+159 silly cache add parsed spec Result {
+159 silly cache add   raw: 'through2@^2.0.0',
+159 silly cache add   scope: null,
+159 silly cache add   escapedName: 'through2',
+159 silly cache add   name: 'through2',
+159 silly cache add   rawSpec: '^2.0.0',
+159 silly cache add   spec: '>=2.0.0 <3.0.0',
+159 silly cache add   type: 'range' }
+160 silly addNamed through2@>=2.0.0 <3.0.0
+161 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for through2
+162 silly addNameRange { name: 'through2', range: '>=2.0.0 <3.0.0', hasData: false }
+163 silly mapToRegistry name through2
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry data Result {
+166 silly mapToRegistry   raw: 'through2',
+166 silly mapToRegistry   scope: null,
+166 silly mapToRegistry   escapedName: 'through2',
+166 silly mapToRegistry   name: 'through2',
+166 silly mapToRegistry   rawSpec: '',
+166 silly mapToRegistry   spec: 'latest',
+166 silly mapToRegistry   type: 'tag' }
+167 silly mapToRegistry uri https://registry.npmjs.org/through2
+168 verbose addNameRange registry:https://registry.npmjs.org/through2 not in flight; fetching
+169 verbose get https://registry.npmjs.org/through2 not expired, no request
+170 silly addNameRange number 2 { name: 'through2', range: '>=2.0.0 <3.0.0', hasData: true }
+171 silly addNameRange versions [ 'through2',
+171 silly addNameRange   [ '0.0.0',
+171 silly addNameRange     '0.0.1',
+171 silly addNameRange     '0.0.2',
+171 silly addNameRange     '0.0.3',
+171 silly addNameRange     '0.0.4',
+171 silly addNameRange     '0.0.5',
+171 silly addNameRange     '0.1.0',
+171 silly addNameRange     '0.2.0',
+171 silly addNameRange     '0.2.1',
+171 silly addNameRange     '0.2.2',
+171 silly addNameRange     '0.2.3',
+171 silly addNameRange     '0.3.0',
+171 silly addNameRange     '0.4.0',
+171 silly addNameRange     '0.4.1',
+171 silly addNameRange     '1.0.0',
+171 silly addNameRange     '0.4.2',
+171 silly addNameRange     '0.5.0',
+171 silly addNameRange     '0.5.1',
+171 silly addNameRange     '0.6.0',
+171 silly addNameRange     '1.1.0',
+171 silly addNameRange     '0.6.1',
+171 silly addNameRange     '1.1.1',
+171 silly addNameRange     '0.6.2',
+171 silly addNameRange     '0.6.3',
+171 silly addNameRange     '0.6.4',
+171 silly addNameRange     '0.6.5',
+171 silly addNameRange     '2.0.0',
+171 silly addNameRange     '2.0.1',
+171 silly addNameRange     '2.0.2',
+171 silly addNameRange     '2.0.3' ] ]
+172 silly addNamed through2@2.0.3
+173 verbose addNamed "2.0.3" is a plain semver version for through2
+174 silly cache afterAdd through2@2.0.3
+175 verbose afterAdd E:\NodeJs\npm_cache\through2\2.0.3\package\package.json not in flight; writing
+176 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+177 verbose afterAdd E:\NodeJs\npm_cache\through2\2.0.3\package\package.json written
+178 silly fetchNamedPackageData readable-stream
+179 silly mapToRegistry name readable-stream
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: 'readable-stream',
+182 silly mapToRegistry   scope: null,
+182 silly mapToRegistry   escapedName: 'readable-stream',
+182 silly mapToRegistry   name: 'readable-stream',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag' }
+183 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+184 verbose request uri https://registry.npmjs.org/readable-stream
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 07:17:30
+187 verbose etag W/"58ac5182-12ea8"
+188 verbose lastModified Tue, 21 Feb 2017 14:41:06 GMT
+189 http request GET https://registry.npmjs.org/readable-stream
+190 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+191 info attempt registry request try #2 at 07:17:40
+192 verbose etag W/"58ac5182-12ea8"
+193 verbose lastModified Tue, 21 Feb 2017 14:41:06 GMT
+194 http request GET https://registry.npmjs.org/readable-stream
+195 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+196 info attempt registry request try #3 at 07:18:40
+197 verbose etag W/"58ac5182-12ea8"
+198 verbose lastModified Tue, 21 Feb 2017 14:41:06 GMT
+199 http request GET https://registry.npmjs.org/readable-stream
+200 silly get cb [ 304, undefined ]
+201 verbose etag https://registry.npmjs.org/readable-stream from cache
+202 verbose get saving readable-stream to E:\NodeJs\npm_cache\registry.npmjs.org\readable-stream\.cache.json
+203 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+204 silly resolveWithNewModule readable-stream@2.2.3 checking installable status
+205 silly cache add args [ 'readable-stream@^2.1.5', null ]
+206 verbose cache add spec readable-stream@^2.1.5
+207 silly cache add parsed spec Result {
+207 silly cache add   raw: 'readable-stream@^2.1.5',
+207 silly cache add   scope: null,
+207 silly cache add   escapedName: 'readable-stream',
+207 silly cache add   name: 'readable-stream',
+207 silly cache add   rawSpec: '^2.1.5',
+207 silly cache add   spec: '>=2.1.5 <3.0.0',
+207 silly cache add   type: 'range' }
+208 silly addNamed readable-stream@>=2.1.5 <3.0.0
+209 verbose addNamed ">=2.1.5 <3.0.0" is a valid semver range for readable-stream
+210 silly addNameRange { name: 'readable-stream',
+210 silly addNameRange   range: '>=2.1.5 <3.0.0',
+210 silly addNameRange   hasData: false }
+211 silly mapToRegistry name readable-stream
+212 silly mapToRegistry using default registry
+213 silly mapToRegistry registry https://registry.npmjs.org/
+214 silly mapToRegistry data Result {
+214 silly mapToRegistry   raw: 'readable-stream',
+214 silly mapToRegistry   scope: null,
+214 silly mapToRegistry   escapedName: 'readable-stream',
+214 silly mapToRegistry   name: 'readable-stream',
+214 silly mapToRegistry   rawSpec: '',
+214 silly mapToRegistry   spec: 'latest',
+214 silly mapToRegistry   type: 'tag' }
+215 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+216 verbose addNameRange registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+217 verbose get https://registry.npmjs.org/readable-stream not expired, no request
+218 silly addNameRange number 2 { name: 'readable-stream',
+218 silly addNameRange   range: '>=2.1.5 <3.0.0',
+218 silly addNameRange   hasData: true }
+219 silly addNameRange versions [ 'readable-stream',
+219 silly addNameRange   [ '0.0.1',
+219 silly addNameRange     '0.0.2',
+219 silly addNameRange     '0.0.3',
+219 silly addNameRange     '0.0.4',
+219 silly addNameRange     '0.1.0',
+219 silly addNameRange     '0.2.0',
+219 silly addNameRange     '0.3.0',
+219 silly addNameRange     '0.3.1',
+219 silly addNameRange     '1.0.0',
+219 silly addNameRange     '1.0.1',
+219 silly addNameRange     '1.0.2',
+219 silly addNameRange     '1.0.15',
+219 silly addNameRange     '1.0.17',
+219 silly addNameRange     '1.1.7',
+219 silly addNameRange     '1.1.8',
+219 silly addNameRange     '1.1.9',
+219 silly addNameRange     '1.0.24',
+219 silly addNameRange     '1.0.25',
+219 silly addNameRange     '1.1.10',
+219 silly addNameRange     '1.0.25-1',
+219 silly addNameRange     '1.1.11',
+219 silly addNameRange     '1.0.26',
+219 silly addNameRange     '1.0.26-1',
+219 silly addNameRange     '1.1.11-1',
+219 silly addNameRange     '1.0.26-2',
+219 silly addNameRange     '1.1.12',
+219 silly addNameRange     '1.0.26-3',
+219 silly addNameRange     '1.0.26-4',
+219 silly addNameRange     '1.1.12-1',
+219 silly addNameRange     '1.0.27-1',
+219 silly addNameRange     '1.1.13-1',
+219 silly addNameRange     '1.0.31',
+219 silly addNameRange     '1.1.13',
+219 silly addNameRange     '1.0.32',
+219 silly addNameRange     '1.0.32-1',
+219 silly addNameRange     '1.0.33-1',
+219 silly addNameRange     '1.0.33-2',
+219 silly addNameRange     '1.0.33',
+219 silly addNameRange     '2.0.0',
+219 silly addNameRange     '2.0.1',
+219 silly addNameRange     '2.0.2',
+219 silly addNameRange     '2.0.3',
+219 silly addNameRange     '2.0.4',
+219 silly addNameRange     '2.0.5',
+219 silly addNameRange     '2.0.6',
+219 silly addNameRange     '1.0.34',
+219 silly addNameRange     '1.1.14',
+219 silly addNameRange     '2.1.0',
+219 silly addNameRange     '2.1.1',
+219 silly addNameRange     '2.1.2',
+219 silly addNameRange     '2.1.3',
+219 silly addNameRange     '2.1.4',
+219 silly addNameRange     '2.1.5',
+219 silly addNameRange     '2.2.0',
+219 silly addNameRange     '2.2.1',
+219 silly addNameRange     '2.2.2',
+219 silly addNameRange     '2.2.3' ] ]
+220 silly addNamed readable-stream@2.2.3
+221 verbose addNamed "2.2.3" is a plain semver version for readable-stream
+222 silly cache afterAdd readable-stream@2.2.3
+223 verbose afterAdd E:\NodeJs\npm_cache\readable-stream\2.2.3\package\package.json not in flight; writing
+224 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+225 verbose afterAdd E:\NodeJs\npm_cache\readable-stream\2.2.3\package\package.json written
+226 silly fetchNamedPackageData isarray
+227 silly mapToRegistry name isarray
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry data Result {
+230 silly mapToRegistry   raw: 'isarray',
+230 silly mapToRegistry   scope: null,
+230 silly mapToRegistry   escapedName: 'isarray',
+230 silly mapToRegistry   name: 'isarray',
+230 silly mapToRegistry   rawSpec: '',
+230 silly mapToRegistry   spec: 'latest',
+230 silly mapToRegistry   type: 'tag' }
+231 silly mapToRegistry uri https://registry.npmjs.org/isarray
+232 verbose request uri https://registry.npmjs.org/isarray
+233 verbose request no auth needed
+234 info attempt registry request try #1 at 07:18:40
+235 verbose etag W/"5818d2eb-226a"
+236 verbose lastModified Tue, 01 Nov 2016 17:37:47 GMT
+237 http request GET https://registry.npmjs.org/isarray
+238 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+239 info attempt registry request try #2 at 07:18:50
+240 verbose etag W/"5818d2eb-226a"
+241 verbose lastModified Tue, 01 Nov 2016 17:37:47 GMT
+242 http request GET https://registry.npmjs.org/isarray
+243 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+244 info attempt registry request try #3 at 07:19:50
+245 verbose etag W/"5818d2eb-226a"
+246 verbose lastModified Tue, 01 Nov 2016 17:37:47 GMT
+247 http request GET https://registry.npmjs.org/isarray
+248 silly get cb [ 304, undefined ]
+249 verbose etag https://registry.npmjs.org/isarray from cache
+250 verbose get saving isarray to E:\NodeJs\npm_cache\registry.npmjs.org\isarray\.cache.json
+251 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+252 silly resolveWithNewModule isarray@1.0.0 checking installable status
+253 silly cache add args [ 'isarray@~1.0.0', null ]
+254 verbose cache add spec isarray@~1.0.0
+255 silly cache add parsed spec Result {
+255 silly cache add   raw: 'isarray@~1.0.0',
+255 silly cache add   scope: null,
+255 silly cache add   escapedName: 'isarray',
+255 silly cache add   name: 'isarray',
+255 silly cache add   rawSpec: '~1.0.0',
+255 silly cache add   spec: '>=1.0.0 <1.1.0',
+255 silly cache add   type: 'range' }
+256 silly addNamed isarray@>=1.0.0 <1.1.0
+257 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for isarray
+258 silly addNameRange { name: 'isarray', range: '>=1.0.0 <1.1.0', hasData: false }
+259 silly mapToRegistry name isarray
+260 silly mapToRegistry using default registry
+261 silly mapToRegistry registry https://registry.npmjs.org/
+262 silly mapToRegistry data Result {
+262 silly mapToRegistry   raw: 'isarray',
+262 silly mapToRegistry   scope: null,
+262 silly mapToRegistry   escapedName: 'isarray',
+262 silly mapToRegistry   name: 'isarray',
+262 silly mapToRegistry   rawSpec: '',
+262 silly mapToRegistry   spec: 'latest',
+262 silly mapToRegistry   type: 'tag' }
+263 silly mapToRegistry uri https://registry.npmjs.org/isarray
+264 verbose addNameRange registry:https://registry.npmjs.org/isarray not in flight; fetching
+265 verbose get https://registry.npmjs.org/isarray not expired, no request
+266 silly addNameRange number 2 { name: 'isarray', range: '>=1.0.0 <1.1.0', hasData: true }
+267 silly addNameRange versions [ 'isarray', [ '0.0.0', '0.0.1', '1.0.0', '2.0.0', '2.0.1' ] ]
+268 silly addNamed isarray@1.0.0
+269 verbose addNamed "1.0.0" is a plain semver version for isarray
+270 silly cache afterAdd isarray@1.0.0
+271 verbose afterAdd E:\NodeJs\npm_cache\isarray\1.0.0\package\package.json not in flight; writing
+272 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+273 verbose afterAdd E:\NodeJs\npm_cache\isarray\1.0.0\package\package.json written
+274 silly fetchNamedPackageData gulp-util
+275 silly mapToRegistry name gulp-util
+276 silly mapToRegistry using default registry
+277 silly mapToRegistry registry https://registry.npmjs.org/
+278 silly mapToRegistry data Result {
+278 silly mapToRegistry   raw: 'gulp-util',
+278 silly mapToRegistry   scope: null,
+278 silly mapToRegistry   escapedName: 'gulp-util',
+278 silly mapToRegistry   name: 'gulp-util',
+278 silly mapToRegistry   rawSpec: '',
+278 silly mapToRegistry   spec: 'latest',
+278 silly mapToRegistry   type: 'tag' }
+279 silly mapToRegistry uri https://registry.npmjs.org/gulp-util
+280 silly resolveWithNewModule gulp-util@3.0.8 checking installable status
+281 silly fetchNamedPackageData object-assign
+282 silly mapToRegistry name object-assign
+283 silly mapToRegistry using default registry
+284 silly mapToRegistry registry https://registry.npmjs.org/
+285 silly mapToRegistry data Result {
+285 silly mapToRegistry   raw: 'object-assign',
+285 silly mapToRegistry   scope: null,
+285 silly mapToRegistry   escapedName: 'object-assign',
+285 silly mapToRegistry   name: 'object-assign',
+285 silly mapToRegistry   rawSpec: '',
+285 silly mapToRegistry   spec: 'latest',
+285 silly mapToRegistry   type: 'tag' }
+286 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+287 silly resolveWithNewModule object-assign@3.0.0 checking installable status
+288 silly fetchNamedPackageData jquery
+289 silly mapToRegistry name jquery
+290 silly mapToRegistry using default registry
+291 silly mapToRegistry registry https://registry.npmjs.org/
+292 silly mapToRegistry data Result {
+292 silly mapToRegistry   raw: 'jquery',
+292 silly mapToRegistry   scope: null,
+292 silly mapToRegistry   escapedName: 'jquery',
+292 silly mapToRegistry   name: 'jquery',
+292 silly mapToRegistry   rawSpec: '',
+292 silly mapToRegistry   spec: 'latest',
+292 silly mapToRegistry   type: 'tag' }
+293 silly mapToRegistry uri https://registry.npmjs.org/jquery
+294 silly fetchNamedPackageData zepto
+295 silly mapToRegistry name zepto
+296 silly mapToRegistry using default registry
+297 silly mapToRegistry registry https://registry.npmjs.org/
+298 silly mapToRegistry data Result {
+298 silly mapToRegistry   raw: 'zepto',
+298 silly mapToRegistry   scope: null,
+298 silly mapToRegistry   escapedName: 'zepto',
+298 silly mapToRegistry   name: 'zepto',
+298 silly mapToRegistry   rawSpec: '',
+298 silly mapToRegistry   spec: 'latest',
+298 silly mapToRegistry   type: 'tag' }
+299 silly mapToRegistry uri https://registry.npmjs.org/zepto
+300 verbose request uri https://registry.npmjs.org/zepto
+301 verbose request no auth needed
+302 info attempt registry request try #1 at 07:19:50
+303 http request GET https://registry.npmjs.org/zepto
+304 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+305 verbose request uri https://registry.npmjs.org/jquery
+306 verbose request no auth needed
+307 info attempt registry request try #1 at 07:19:50
+308 verbose etag W/"589fa5ed-148c2"
+309 verbose lastModified Sun, 12 Feb 2017 00:01:49 GMT
+310 http request GET https://registry.npmjs.org/jquery
+311 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+312 info attempt registry request try #2 at 07:20:00
+313 http request GET https://registry.npmjs.org/zepto
+314 info attempt registry request try #2 at 07:20:00
+315 verbose etag W/"589fa5ed-148c2"
+316 verbose lastModified Sun, 12 Feb 2017 00:01:49 GMT
+317 http request GET https://registry.npmjs.org/jquery
+318 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+319 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+320 info attempt registry request try #3 at 07:21:00
+321 http request GET https://registry.npmjs.org/zepto
+322 info attempt registry request try #3 at 07:21:00
+323 verbose etag W/"589fa5ed-148c2"
+324 verbose lastModified Sun, 12 Feb 2017 00:01:49 GMT
+325 http request GET https://registry.npmjs.org/jquery
+326 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+326 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+326 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+326 silly fetchPackageMetaData  error for zepto@^1.2.0 { Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+326 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+326 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+326 silly fetchPackageMetaData   code: 'ENOTFOUND',
+326 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+326 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+326 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+326 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+326 silly fetchPackageMetaData   port: 443 }
+327 silly get cb [ 304, undefined ]
+328 verbose etag https://registry.npmjs.org/jquery from cache
+329 verbose get saving jquery to E:\NodeJs\npm_cache\registry.npmjs.org\jquery\.cache.json
+330 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+331 silly resolveWithNewModule jquery@3.1.1 checking installable status
+332 silly cache add args [ 'jquery@^3.1.1', null ]
+333 verbose cache add spec jquery@^3.1.1
+334 silly cache add parsed spec Result {
+334 silly cache add   raw: 'jquery@^3.1.1',
+334 silly cache add   scope: null,
+334 silly cache add   escapedName: 'jquery',
+334 silly cache add   name: 'jquery',
+334 silly cache add   rawSpec: '^3.1.1',
+334 silly cache add   spec: '>=3.1.1 <4.0.0',
+334 silly cache add   type: 'range' }
+335 silly addNamed jquery@>=3.1.1 <4.0.0
+336 verbose addNamed ">=3.1.1 <4.0.0" is a valid semver range for jquery
+337 silly addNameRange { name: 'jquery', range: '>=3.1.1 <4.0.0', hasData: false }
+338 silly mapToRegistry name jquery
+339 silly mapToRegistry using default registry
+340 silly mapToRegistry registry https://registry.npmjs.org/
+341 silly mapToRegistry data Result {
+341 silly mapToRegistry   raw: 'jquery',
+341 silly mapToRegistry   scope: null,
+341 silly mapToRegistry   escapedName: 'jquery',
+341 silly mapToRegistry   name: 'jquery',
+341 silly mapToRegistry   rawSpec: '',
+341 silly mapToRegistry   spec: 'latest',
+341 silly mapToRegistry   type: 'tag' }
+342 silly mapToRegistry uri https://registry.npmjs.org/jquery
+343 verbose addNameRange registry:https://registry.npmjs.org/jquery not in flight; fetching
+344 verbose get https://registry.npmjs.org/jquery not expired, no request
+345 silly addNameRange number 2 { name: 'jquery', range: '>=3.1.1 <4.0.0', hasData: true }
+346 silly addNameRange versions [ 'jquery',
+346 silly addNameRange   [ '1.5.1',
+346 silly addNameRange     '1.6.2',
+346 silly addNameRange     '1.6.3',
+346 silly addNameRange     '1.7.2',
+346 silly addNameRange     '1.7.3',
+346 silly addNameRange     '1.8.2',
+346 silly addNameRange     '1.8.3',
+346 silly addNameRange     '2.1.0-beta2',
+346 silly addNameRange     '2.1.0-beta3',
+346 silly addNameRange     '1.11.0-beta3',
+346 silly addNameRange     '1.11.0-rc1',
+346 silly addNameRange     '2.1.0-rc1',
+346 silly addNameRange     '1.11.0',
+346 silly addNameRange     '2.1.0',
+346 silly addNameRange     '2.1.1-beta1',
+346 silly addNameRange     '1.11.1-beta1',
+346 silly addNameRange     '2.1.1-rc1',
+346 silly addNameRange     '1.11.1-rc1',
+346 silly addNameRange     '2.1.1-rc2',
+346 silly addNameRange     '1.11.1-rc2',
+346 silly addNameRange     '2.1.1',
+346 silly addNameRange     '1.11.1',
+346 silly addNameRange     '1.9.1',
+346 silly addNameRange     '2.1.2',
+346 silly addNameRange     '1.11.2',
+346 silly addNameRange     '2.1.3',
+346 silly addNameRange     '2.1.4',
+346 silly addNameRange     '1.11.3',
+346 silly addNameRange     '3.0.0-alpha1',
+346 silly addNameRange     '1.12.0',
+346 silly addNameRange     '2.2.0',
+346 silly addNameRange     '3.0.0-beta1',
+346 silly addNameRange     '1.12.1',
+346 silly addNameRange     '2.2.1',
+346 silly addNameRange     '1.12.2',
+346 silly addNameRange     '2.2.2',
+346 silly addNameRange     '1.12.3',
+346 silly addNameRange     '2.2.3',
+346 silly addNameRange     '1.12.4',
+346 silly addNameRange     '2.2.4',
+346 silly addNameRange     '3.0.0-rc1',
+346 silly addNameRange     '3.0.0',
+346 silly addNameRange     '3.1.0',
+346 silly addNameRange     '3.1.1' ] ]
+347 silly addNamed jquery@3.1.1
+348 verbose addNamed "3.1.1" is a plain semver version for jquery
+349 silly cache afterAdd jquery@3.1.1
+350 verbose afterAdd E:\NodeJs\npm_cache\jquery\3.1.1\package\package.json not in flight; writing
+351 verbose correctMkdir E:\NodeJs\npm_cache correctMkdir not in flight; initializing
+352 verbose afterAdd E:\NodeJs\npm_cache\jquery\3.1.1\package\package.json written
+353 silly rollbackFailedOptional Starting
+354 silly rollbackFailedOptional Finishing
+355 silly runTopLevelLifecycles Finishing
+356 silly install printInstalled
+357 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+357 verbose stack     at errnoException (dns.js:28:10)
+357 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+358 verbose cwd E:\OM_one\zhonglv\zhonglv\zhonglv
+359 error Windows_NT 6.1.7601
+360 error argv "E:\\NodeJs\\node.exe" "E:\\NodeJs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+361 error node v6.9.1
+362 error npm  v3.10.8
+363 error code ENOTFOUND
+364 error errno ENOTFOUND
+365 error syscall getaddrinfo
+366 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+367 error network This is most likely not a problem with npm itself
+367 error network and is related to network connectivity.
+367 error network In most cases you are behind a proxy or have bad network settings.
+367 error network
+367 error network If you are behind a proxy, please make sure that the
+367 error network 'proxy' config is set properly.  See: 'npm help config'
+368 verbose exit [ 1, true ]
