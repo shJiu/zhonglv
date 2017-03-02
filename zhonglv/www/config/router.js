@@ -1,11 +1,17 @@
 angular.module("app").config(function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider.otherwise("/shouye")
+	if(window.localStorage['user']){
+		$urlRouterProvider.otherwise("/shouye")
+		
+	}else{
+		$urlRouterProvider.otherwise("/denglu")
+	}
+	
 	$stateProvider
-	/*.state("yindao",{
+	.state("yindao",{
 		url:"/yindao",
 		templateUrl:"controllers/yindao/yindao.html",
 		controller:"yindaoController"
-	})*/
+	})
 	.state("shouye",{
 		url:"/shouye",
 		templateUrl:"controllers/shouye/shouye.html",
@@ -105,6 +111,12 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		url:"/xiugaipwd",
 		templateUrl:"controllers/wode/wode_page/xiugaipwd/xiugaipwd.html",
 		controller:"wodexiugaipwdCtrl"
+	})
+
+	.state("zhuce",{
+		url:"/zhuce",
+		templateUrl:"controllers/wode/wode_page/zhuce/zhuce.html",
+		controller:"zhuceCtrl"
 	})
 	.state("zsd",{
 		url:"/zsd",

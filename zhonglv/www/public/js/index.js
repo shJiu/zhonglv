@@ -9,6 +9,7 @@ angular.module('app', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+<<<<<<< HEAD
 
 
 })
@@ -24,3 +25,16 @@ angular.module('app', ['ionic'])
  }
 
 })
+=======
+  
+})
+/*.controller("appCtrl",function($scope){
+	$scope.show=false;
+	console.log($scope.show)
+	
+  $scope.$on("showbar",function(event,data){
+  	console.log(data)
+  	$scope.show=data;
+  })
+})*/
+>>>>>>> 219ec334cecb3c6ed091ec9c22c12382fad6bab8
