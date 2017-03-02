@@ -1,5 +1,8 @@
 @charset "utf-8";
 @import "reset.css";
+.contenter {
+  margin-top: 45px;
+}
 .swiper-container {
   width: 100%;
   height: 200px;
@@ -539,12 +542,12 @@
 }
 .my_exitbtn .zhuce {
   padding: 10px 0;
-  color: #E5F5FC;
+  color: #666;
   font-size: 12px;
   border: 0;
   border-radius: 20px;
   background: none;
-  border: 1px solid #E5F5FC;
+  border: 1px solid #ccc;
   margin-top: 20px;
 }
 .my_exitbtn.denglu_btns {

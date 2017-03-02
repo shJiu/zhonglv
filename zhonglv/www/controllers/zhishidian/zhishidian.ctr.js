@@ -1,8 +1,24 @@
-angular.module("app").controller("zhishidianController",function($scope){
+angular.module("app").controller("zhishidianController",["$scope",function($scope){
 
-	//搜索框获取焦点改变宽度
+	$scope.butshow = true;
+    $scope.toggle= function(index){
+    	$scope.butshow = !($scope.butshow);
+	}
+
+	var inp=document.getElementById('zsd_inputtxt'),
+		inpbox=document.getElementById("inpbox"),
+		qxbtn=document.getElementsByClassName('zsd_btn_ml');
+
+	inp.onfocus=function(){
+		inpbox.style.width=77+"%";
+	}
+	qxbtn[0].onclick=function(){
+		inpbox.style.width=100+"%";
+	}
+
+	/*//搜索框获取焦点改变宽度
 	$("#zsd_inputtxt").on("focus",function(){
-		$(".zsd_ss div").animate({width:"75%"},500)
+		$(".zsd_ss div").animate({width:"78%"},500)
 		$(".zsd_con").hide()
 	})
 		
@@ -16,9 +32,7 @@ angular.module("app").controller("zhishidianController",function($scope){
 	$(".zsd_con_list_tit").on("click",function(){
 		$(this).toggleClass("hide")
 		$(this).next().slideToggle("slow")
-		
-
-	})
+	})*/
 
 
-})
+}])

@@ -34,6 +34,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     			errorCallback( error );
     		})
     	},
+<<<<<<< HEAD
         kx : function( options,successCallback,errorCallback ){
             httpServer.get( "Account/GetMessageList",{
                 id : options.id,
@@ -58,6 +59,19 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                 errorCallback( error );
             })
         } 
+=======
+
+         Code : function( options,successCallback,errorCallback ){
+            httpServer.post( "Account/RegisterSMSSend",{
+                mobile : options.mobile
+            },function( res ){
+                console.log(res)
+               // successCallback(res);
+            },function(error){
+               // errorCallback( error );
+            })
+        }
+>>>>>>> a0f7f754c939edc4431f6d12244ea36ca0462d10
     }
 
 
