@@ -1,5 +1,11 @@
 angular.module("app").config(function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider.otherwise("/yindao")
+	if(window.localStorage['user']){
+		$urlRouterProvider.otherwise("/shouye")
+		
+	}else{
+		$urlRouterProvider.otherwise("/denglu")
+	}
+	
 	$stateProvider
 	.state("yindao",{
 		url:"/yindao",
