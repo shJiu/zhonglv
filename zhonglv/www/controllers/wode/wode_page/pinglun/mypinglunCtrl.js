@@ -5,9 +5,9 @@ angular.module("app")
         pagesize : 1,
         pageindex : 1
 	},function(data){
-		console.log(data)
+		//console.log(data)
 	},function(err){
-		console.log(22)
-		console.log(err)
+		//console.log(22)
+		//console.log(err)
 	})
 }])
