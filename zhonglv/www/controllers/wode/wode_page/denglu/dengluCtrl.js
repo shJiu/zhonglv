@@ -4,12 +4,12 @@ angular.module("app")
 	$scope.userPwd="";
 
 	$scope.loginDo=function(){
-		///console.log(this.userPwd)
+		console.log(this.userPhone)
 		userServer.Login({
 			userPhone:this.userPhone,
 			Pwd:this.userPwd
 		},function(res){
-			console.log(res)
+			//console.log(res)
 			if(res.result!=-1){
 				$state.go("shouye")
 			}
