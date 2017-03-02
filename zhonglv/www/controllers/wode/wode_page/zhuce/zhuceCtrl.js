@@ -1,6 +1,6 @@
 
 angular.module("app")
-.controller("zhuceCtrl",function($scope,userServer){
+.controller("zhuceCtrl",function($scope,userServer,$state){
 	$scope.mobile="",
 	LoginCode="",
 	Pwd=""
@@ -11,9 +11,11 @@ angular.module("app")
 			LoginCode : this.LoginCode,
 			Pwd :this.Pwd 
 		},function(){
-			alert("注册成功")
+			
+			$state.go("denglu")
+
 		},function(){
-			alert("注册失败")
+			
 		})
 	}
 	$scope.RegisterCode=function(){

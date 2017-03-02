@@ -7,9 +7,12 @@ angular.module("app")
 		userServer.Login({
 			userPhone:$scope.userPhone,
 			Pwd:$scope.userPwd
-		},function(){
-			//alert("登陆成功")
-			$state.go("shouye")
+		},function(res){
+			console.log(res)
+			if(res.result!=-1){
+				$state.go("shouye")
+			}
+			
 		},function(){
 			alert("登陆失败")
 		})
