@@ -33,7 +33,18 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     		},function(error){
     			errorCallback( error );
     		})
-    	}
+    	},
+
+         Code : function( options,successCallback,errorCallback ){
+            httpServer.post( "Account/RegisterSMSSend",{
+                mobile : options.mobile
+            },function( res ){
+                console.log(res)
+               // successCallback(res);
+            },function(error){
+               // errorCallback( error );
+            })
+        }
     }
 
 
