@@ -36,8 +36,20 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
     			errorCallback( error );
     		})
     	},
-
-       
+        //个人设置
+       amend : function( options,successCallback,errorCallback ){
+            httpServer.post( "Account/UpdateUserInfo",{
+                id:JSON.parse(window.localStorage['user']).id,
+                nick_name : options.username, 
+                msn : options.msn,
+                qq :options.qq,
+                email:options.email 
+            },function( res ){
+                successCallback(res.data);
+            },function(error){
+                errorCallback( error );
+            })
+        },
 
         getUserId:function(){
             if(window.localStorage['user']){
