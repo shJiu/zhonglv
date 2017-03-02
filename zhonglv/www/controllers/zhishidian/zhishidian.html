@@ -2,7 +2,7 @@
   <ion-content class="content">
    <!--  <img ng-src="{{chat.face}}" style="width: 64px; height: 64px"> -->
   		<div class="zsd_ss huiseBg bor-bot padLR20">
-  			<div>
+  			<div id="inpbox">
   				<input id="zsd_inputtxt" type="text" value="请输入关键字"><span></span>
   			</div>
   			<button class="zsd_btn_ml">取消</button>
@@ -11,16 +11,16 @@
 			<div class="zsd_con_list">
 				<h1>司考</h1>
 				<ol>
-					<li class="zsd_con_list_tit padLR20 hide">名师讲义</li>
-					<ul class="padLR20 ul_hide">
+					<li class="zsd_con_list_tit padLR20 hide" ng-click="toggle();">名师讲义</li>
+					<ul class="padLR20" ng-show="butshow">
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 					</ul>
-					<li class="zsd_con_list_tit padLR20 hide">名师讲义</li>
-					<ul class="padLR20 ul_hide">
+					<li class="zsd_con_list_tit padLR20 hide" ng-click="toggle();">名师讲义</li>
+					<ul class="padLR20" ng-show="butshow">
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
 						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
@@ -38,35 +38,7 @@
 				</ol>
 			</div>	
 
-			<div class="zsd_con_list">
-				<h1>司考</h1>
-				<ol>
-					<li class="zsd_con_list_tit padLR20 hide">名师讲义</li>
-					<ul class="padLR20 ul_hide">
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-					</ul>
-					<li class="zsd_con_list_tit padLR20 hide">名师讲义</li>
-					<ul class="padLR20 ul_hide">
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-					</ul>
-					<li class="zsd_con_list_tit padLR20 hide">名师讲义</li>
-					<ul class="padLR20 ul_hide">
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-						<li ui-sref="zsd">宪法<span><b>0</b>/<i>293</i>题 ></span></li>
-					</ul>
-				</ol>
-			</div>		
+				
 		</div>
 		
   </ion-content>
