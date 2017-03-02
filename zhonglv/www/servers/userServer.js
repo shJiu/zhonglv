@@ -34,7 +34,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     			errorCallback( error );
     		})
     	},
-<<<<<<< HEAD
+
         kx : function( options,successCallback,errorCallback ){
             httpServer.get( "Account/GetMessageList",{
                 id : options.id,
@@ -58,8 +58,20 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
             },function(error){
                 errorCallback( error );
             })
-        } 
-=======
+        }, 
+
+        photo : function( options,successCallback,errorCallback ){
+            httpServer.post( "Account/UpdateUserAvatar",{
+                id : options.id,
+                avatar : options.avatar
+            },function( res ){
+                
+               successCallback(res);
+            },function(error){
+               errorCallback( error );
+            })
+        },
+
 
          Code : function( options,successCallback,errorCallback ){
             httpServer.post( "Account/RegisterSMSSend",{
@@ -71,7 +83,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                // errorCallback( error );
             })
         }
->>>>>>> a0f7f754c939edc4431f6d12244ea36ca0462d10
+
     }
 
 
