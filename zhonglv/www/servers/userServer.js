@@ -1,4 +1,4 @@
-angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
+angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$state){
 
 	
     return {
@@ -33,7 +33,14 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     		},function(error){
     			errorCallback( error );
     		})
-    	}
+    	},
+        getUserId:function(){
+            if(window.localStorage['user']){
+                return JSON.parse(window.localStorage['user'].id)
+            }else{
+                return 7
+            }
+        }
     }
 
 
