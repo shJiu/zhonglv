@@ -1,3 +1,6 @@
-angular.module("app").controller("wodeController",function($scope){
+angular.module("app")
 
-})
+.controller("wodeController",["$scope",function( $scope ){
+
+	
+}])

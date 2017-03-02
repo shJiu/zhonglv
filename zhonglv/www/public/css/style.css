@@ -449,6 +449,7 @@
   display: inline-block;
   width: 30%;
   color: #333;
+  font-size: 12px;
 }
 .my_list .my_shezhi_list li input {
   display: inline;
