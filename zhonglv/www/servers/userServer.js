@@ -63,7 +63,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
             },function(error){
                 errorCallback( error );
             })
-<<<<<<< HEAD
+
         }, 
 
         photo : function( options,successCallback,errorCallback ){
@@ -77,9 +77,9 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                errorCallback( error );
             })
         },
-=======
-        } ,
->>>>>>> e82398a6b35d23735ce739faefa89d0bc2e8fa1f
+
+        
+
 
 
          Code : function( options,successCallback,errorCallback ){
