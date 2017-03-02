@@ -593,8 +593,8 @@
 }
 .denglu_page .denglu_p span {
   display: block;
-  border: 1px solid #E5F5FC;
-  color: #E5F5FC;
+  border: 1px solid #ccc;
+  color: #ccc;
   padding: 5px 20px;
   border-radius: 20px;
 }

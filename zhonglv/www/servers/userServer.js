@@ -64,7 +64,23 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
             },function(error){
                 errorCallback( error );
             })
+<<<<<<< HEAD
+        }, 
+
+        photo : function( options,successCallback,errorCallback ){
+            httpServer.post( "Account/UpdateUserAvatar",{
+                id : options.id,
+                avatar : options.avatar
+            },function( res ){
+                
+               successCallback(res);
+            },function(error){
+               errorCallback( error );
+            })
+        },
+=======
         } ,
+>>>>>>> e82398a6b35d23735ce739faefa89d0bc2e8fa1f
 
         //发送验证码
          Code : function( options,successCallback,errorCallback ){
