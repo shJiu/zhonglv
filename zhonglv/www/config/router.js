@@ -112,6 +112,12 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"controllers/wode/wode_page/xiugaipwd/xiugaipwd.html",
 		controller:"wodexiugaipwdCtrl"
 	})
+
+	.state("zhuce",{
+		url:"/zhuce",
+		templateUrl:"controllers/wode/wode_page/zhuce/zhuce.html",
+		controller:"zhuceCtrl"
+	})
 	.state("zsd",{
 		url:"/zsd",
 		templateUrl:"controllers/zhishidian/zsd/zsd.html",
