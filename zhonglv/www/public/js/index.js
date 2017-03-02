@@ -9,4 +9,14 @@ angular.module('app', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+  
 })
+/*.controller("appCtrl",function($scope){
+	$scope.show=false;
+	console.log($scope.show)
+	
+  $scope.$on("showbar",function(event,data){
+  	console.log(data)
+  	$scope.show=data;
+  })
+})*/

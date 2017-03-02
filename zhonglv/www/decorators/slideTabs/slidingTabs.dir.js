@@ -266,7 +266,7 @@ var slidingTabsDirective = angular.module("ionic").directive('ionSlideTabs', ['$
                 var position = currentSlideLeftOffset / slider[0].offsetWidth;
                 var slideDirection = position > 0 ? "right":"left";
                 position = Math.abs(position);
-
+              
                 setIndicatorPosition(currentSlideIndex, targetSlideIndex, position, slideDirection);
             };
 
