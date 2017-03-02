@@ -1,7 +1,7 @@
 
 angular.module("app")
 .controller("zhuceCtrl",function($scope,userServer,$state){
-	$scope.mobile="",
+	mobile="",
 	LoginCode="",
 	Pwd=""
 	$scope.Register=function(){

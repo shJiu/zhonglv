@@ -4,9 +4,10 @@ angular.module("app")
 	$scope.userPwd="";
 
 	$scope.loginDo=function(){
+		///console.log(this.userPwd)
 		userServer.Login({
-			userPhone:$scope.userPhone,
-			Pwd:$scope.userPwd
+			userPhone:this.userPhone,
+			Pwd:this.userPwd
 		},function(res){
 			console.log(res)
 			if(res.result!=-1){

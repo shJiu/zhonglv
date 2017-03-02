@@ -9,25 +9,23 @@ angular.module('app', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-<<<<<<< HEAD
+
 
 
 })
-.controller("appCtrl",function($scope){
+/*.controller("appCtrl",function($scope){
 	$scope.show=true;
 	$scope.$on("hideFoot",function(event,data){
 		console.log(data)
 		    $scope.show=data;
 		
 	});
- $scope.showfoot=function(){
-       $scope.show=true;
- }
+
 
 })
-=======
+*/
   
-})
+
 /*.controller("appCtrl",function($scope){
 	$scope.show=false;
 	console.log($scope.show)
@@ -37,4 +35,4 @@ angular.module('app', ['ionic'])
   	$scope.show=data;
   })
 })*/
->>>>>>> 219ec334cecb3c6ed091ec9c22c12382fad6bab8
+

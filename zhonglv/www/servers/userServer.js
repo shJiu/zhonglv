@@ -1,6 +1,5 @@
 angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
 
-	
     return {
     	Register : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Register",{
@@ -13,9 +12,15 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     			errorCallback( error );
     		})
     	},
+        getuserId:function(){
+            if(window.localStorage['user']){
+                return JSON.parse(window.localStorage['user']).id
+            }
+        },
     	Login : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Login",{
-    			LoginName : options.LoginName,
+
+    			LoginName : options.userPhone,
     			Pwd : options.Pwd
     		},function( res ){
     			if( res.data.RetValue ){
