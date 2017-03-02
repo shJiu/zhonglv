@@ -9,7 +9,7 @@ angular.module("app")
 			Pwd :this.Pwd 
 		},function(res){
 			console.log(res)
-			if(res.RetValue==true){
+			if(res.RetValue!=-1){
 				$state.go("denglu")
 			}
 		},function(err){

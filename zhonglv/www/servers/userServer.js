@@ -87,12 +87,23 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                 mobile : options.mobile
             },function( res ){
                 console.log(res)
-               // successCallback(res);
+                successCallback(res);
             },function(error){
-               // errorCallback( error );
+                errorCallback( error );
+            })
+        },
+        //忘记密码
+        remPwd:function(options,successCallback,errorCallback){
+            httpServer.post("Account/RepassSmsSend",{
+                mobile:options.userPhone
+            },function(res){
+               console.log(res)
+                successCallback(res);
+            },function(error){
+               // cosnole.log(error)
+                 errorCallback( error );
             })
         }
-
     }
 
 
