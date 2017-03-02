@@ -325,10 +325,6 @@
   width: 100%;
   height: 46px;
   line-height: 46px;
-  background: url("../../../img/zsd_showjt.jpg") no-repeat right center;
-  background-position: 95% 50%;
-}
-.zsd_con .zsd_con_list ol .hide {
   background: url("../../../img/zsd_hidejt.jpg") no-repeat right center;
   background-position: 95% 50%;
 }
@@ -343,6 +339,13 @@
 }
 .zsd_con .zsd_con_list ol .ul_hide {
   display: none;
+}
+.zsd_con .zsd_con_list .ol_hide li {
+  background: url("../../../img/zsd_showjt.jpg") no-repeat right center;
+  background-position: 95% 50%;
+}
+.zsd_con .zsd_con_list .ol_hide .ul_hide {
+  display: block;
 }
 .content-form {
   width: 100%;

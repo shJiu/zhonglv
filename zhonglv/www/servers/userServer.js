@@ -1,4 +1,4 @@
-angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
+angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$state){
 
     return {
         //注册
@@ -40,6 +40,15 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     			errorCallback( error );
     		})
     	},
+<<<<<<< HEAD
+        getUserId:function(){
+            if(window.localStorage['user']){
+                return JSON.parse(window.localStorage['user'].id)
+            }else{
+                return 7
+            }
+        }
+=======
 
         kx : function( options,successCallback,errorCallback ){
             httpServer.get( "Account/GetMessageList",{
@@ -79,7 +88,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
             })
         },
 
-      
+
 
         //发送验证码
          Code : function( options,successCallback,errorCallback ){
@@ -104,6 +113,11 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                  errorCallback( error );
             })
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d221b293f7348dc41ec77336f984689a389db1c6
+>>>>>>> 0fb314661d75384926b1d2dd98a1d427332e8224
     }
 
 
