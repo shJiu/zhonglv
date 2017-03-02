@@ -1,9 +1,13 @@
-<ul class="list">
-	<li class="item">
-	  <div class="fr">
-	  		题数<span>0</span>
-			<i class="ion-clock chengsefont" ng-show="true"></i><time ng-show="true">120</time>
-	  </div>	
-	  2006
-	</li>
-</ul>
+<ion-view view-title="{{title}}" hide-back-button="false">
+	
+  <ion-content class="content has-header" scroll="false">
+  <section class="paper-content">
+		<nav class="paper-header huiseBg" ng-bind="{{year}}"></nav>
+		<section class="paper-cont">
+			<button class="begin chengseBg">开始答题</button>
+			<button class="reset chengseBg">重新开始</button>	
+		</section>
+  </section> 
+  </ion-content>
+
+</ion-view>

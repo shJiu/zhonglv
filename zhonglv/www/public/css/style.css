@@ -225,8 +225,14 @@
 }
 .content .tiku-content .tabs-nav > a.on {
   background: #FF9B00;
-  color: #fff;
   border: 1px solid #FF9B00;
+}
+.content .tiku-content .tabs-nav > a.on span {
+  color: #fff;
+}
+.content .tiku-content .tabs-nav > a span {
+  display: block;
+  width: 26px;
 }
 .content .tiku-content .tabs-cont .list .item {
   padding: 10px 20px;
@@ -236,6 +242,23 @@
 .content .tiku-content .tabs-cont .list .item .fr span,
 .content .tiku-content .tabs-cont .list .item .fr i {
   margin: 0 5px;
+}
+.paper-header {
+  line-height: 80px;
+  text-align: center;
+  font-size: 16px;
+}
+.reset,
+.begin {
+  display: block;
+  width: 130px;
+  padding: 12px 0;
+  color: #fff;
+  font-size: 12px;
+  border: 0;
+  border-radius: 20px;
+  margin: 50px auto;
+  box-sizing: border-box;
 }
 .zsd_ss {
   box-sizing: border-box;
@@ -614,6 +637,9 @@
 }
 .bar-header {
   background: #fff!important;
+}
+.fl {
+  float: left;
 }
 .fr {
   float: right;

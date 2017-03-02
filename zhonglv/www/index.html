@@ -30,6 +30,7 @@
     <!-- cordova script (this will be a 404 during development) -->
     <!-- <script src="cordova.js"></script> -->
     <script src="lib/swiper/js/swiper.min.js"></script>
+    <script src="lib/md5.js"></script>
     <!-- your app's js -->
     <script src="public/js/index.js"></script>
     <script src="config/router.js"></script>
@@ -41,6 +42,7 @@
    <script src="controllers/shouye/shouye.ctr.js"></script>
    <script src="controllers/kecheng/kecheng.ctr.js"></script>
    <script src="controllers/tiku/tiku.ctr.js"></script>
+   <script src="controllers/tiku/paper.ctr.js"></script>
    <script src="controllers/zhishidian/zhishidian.ctr.js"></script>
    <script src="controllers/wode/wode.ctr.js"></script>
 
@@ -70,7 +72,7 @@
 
    <!-- ｝ -->
 
-    <!-- 自定义服务器 -->
+  <!-- 自定义服务器 -->
    <script src="servers/httpServer.js"></script>
    <script src="servers/userServer.js"></script> 
    <!-- ｝ -->
@@ -79,22 +81,22 @@
   <script src="lib/jquery/jquery.min.js"></script>
 
   </head>
-  <body ng-app="app">
+  <body ng-app="app" ng-controller="appCtrl">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar class="bar-stable">
+    <ion-nav-bar class="bar-stable" ng-click="showfoot()">
       <ion-nav-back-button>
       返回
       </ion-nav-back-button>
     </ion-nav-bar>
     <!--
-      The views will be rendered in the <ion-nav-view> directive below
+      The views will be rendered n the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
     <ion-nav-view>
-      <footer-directive></footer-directive>
+      <footer-directive ng-show="show"></footer-directive>
     </ion-nav-view>
 
   </body>

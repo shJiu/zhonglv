@@ -116,11 +116,11 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		templateUrl:"controllers/zhishidian/zsd-xq/zsd-xq.html",
 		controller:"zsdxqController"
 	})
-	// .state("tiku.paper",{		//试卷详情
-	// 	url:"/paper",
- //        templateUrl:"controllers/tiku/paper.html",
- //        controller:"paperController"
+	.state("paper",{		//试卷详情
+		url:"/paper/:year",
+        templateUrl:"controllers/tiku/paper.html",
+        controller:"paperController"
        
-	// })
+	})
 	
 })

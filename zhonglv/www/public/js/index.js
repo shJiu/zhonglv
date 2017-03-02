@@ -9,4 +9,18 @@ angular.module('app', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+
+
+})
+.controller("appCtrl",function($scope){
+	$scope.show=true;
+	$scope.$on("hideFoot",function(event,data){
+		console.log(data)
+		    $scope.show=data;
+		
+	});
+ $scope.showfoot=function(){
+       $scope.show=true;
+ }
+
 })
