@@ -1,6 +1,5 @@
 angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
 
-	
     return {
     	Register : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Register",{
@@ -13,9 +12,15 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
     			errorCallback( error );
     		})
     	},
+        getuserId:function(){
+            if(window.localStorage['user']){
+                return JSON.parse(window.localStorage['user']).id
+            }
+        },
     	Login : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Login",{
-    			LoginName : options.LoginName,
+
+    			LoginName : options.userPhone,
     			Pwd : options.Pwd
     		},function( res ){
     			if( res.data.RetValue ){
@@ -58,6 +63,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
             },function(error){
                 errorCallback( error );
             })
+<<<<<<< HEAD
         }, 
 
         photo : function( options,successCallback,errorCallback ){
@@ -71,6 +77,9 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                errorCallback( error );
             })
         },
+=======
+        } ,
+>>>>>>> e82398a6b35d23735ce739faefa89d0bc2e8fa1f
 
 
          Code : function( options,successCallback,errorCallback ){
