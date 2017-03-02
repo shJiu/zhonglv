@@ -1,23 +1,22 @@
 
 angular.module("app")
 .controller("zhuceCtrl",function($scope,userServer,$state){
-	mobile="",
-	LoginCode="",
-	Pwd=""
 	$scope.Register=function(){
 		//console.log(this.LoginCode)
-		userServer.Login({
+		userServer.Register({
 			LoginMobile : this.LoginMobile, 
 			LoginCode : this.LoginCode,
 			Pwd :this.Pwd 
-		},function(){
-			
-			$state.go("denglu")
-
-		},function(){
-			
+		},function(res){
+			console.log(res)
+			if(res.RetValue==true){
+				$state.go("denglu")
+			}
+		},function(err){
+			console.log(err)
 		})
 	}
+
 	$scope.RegisterCode=function(){
 		userServer.Code({
 			mobile : this.mobile

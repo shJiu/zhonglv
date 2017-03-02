@@ -1,6 +1,7 @@
 angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
 
     return {
+        //注册
     	Register : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Register",{
     			LoginMobile : options.LoginMobile,
@@ -17,9 +18,9 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
                 return JSON.parse(window.localStorage['user']).id
             }
         },
+        //登录
     	Login : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Login",{
-
     			LoginName : options.userPhone,
     			Pwd : options.Pwd
     		},function( res ){
@@ -81,7 +82,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
         
 
 
-
+        //发送验证码
          Code : function( options,successCallback,errorCallback ){
             httpServer.post( "Account/RegisterSMSSend",{
                 mobile : options.mobile
