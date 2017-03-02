@@ -13,11 +13,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
     			errorCallback( error );
     		})
     	},
-        getuserId:function(){
-            if(window.localStorage['user']){
-                return JSON.parse(window.localStorage['user']).id
-            }
-        },
+        
         //登录
     	Login : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Login",{
@@ -40,15 +36,15 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
     			errorCallback( error );
     		})
     	},
-<<<<<<< HEAD
+
+       
+
         getUserId:function(){
             if(window.localStorage['user']){
-                return JSON.parse(window.localStorage['user'].id)
-            }else{
-                return 7
+                return JSON.parse(window.localStorage['user']).id
             }
-        }
-=======
+        },
+
 
         kx : function( options,successCallback,errorCallback ){
             httpServer.get( "Account/GetMessageList",{
@@ -113,11 +109,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
                  errorCallback( error );
             })
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> d221b293f7348dc41ec77336f984689a389db1c6
->>>>>>> 0fb314661d75384926b1d2dd98a1d427332e8224
     }
 
 
