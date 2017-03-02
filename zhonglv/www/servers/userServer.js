@@ -79,12 +79,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup ){
             })
         },
 
-<<<<<<< HEAD
-        
 
-=======
-      
->>>>>>> 72b714b1f80941df7cb695f42b58b1cff08deff1
 
         //发送验证码
          Code : function( options,successCallback,errorCallback ){
