@@ -45,6 +45,16 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
                 qq :options.qq,
                 email:options.email 
             },function( res ){
+                if(res.data.title=="成功"){
+                    window.localStorage['user'] = JSON.stringify(res.config.data)
+                    var alertPopup = $ionicPopup.alert({
+                       title: '提示',
+                       template: "修改成功"
+                     });
+                     alertPopup.then(function(res) {
+                       console.log('Thank you for not eating my delicious ice cream cone');
+                     });
+                }
                 successCallback(res.data);
             },function(error){
                 errorCallback( error );
@@ -56,8 +66,28 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
                 return JSON.parse(window.localStorage['user']).id
             }
         },
+        //修改密码
+        xiugaipwd:function(options,successCallback,errorCallback){
+            httpServer.post("Account/UpdateUserPassWord",{
+                id:JSON.parse(window.localStorage['user']).id,
+                old_password:options.old_password,
+                new_password:options.new_password
+            },function(res){
+                console.log(res)
+                if(res.data.title=="成功"){
+                    window.localStorage['user'] = JSON.stringify(res.config.data)
+                    var alertPopup = $ionicPopup.alert({
+                       title: '提示',
+                       template: res.data.description
+                     });
+                     alertPopup.then(function(res) {
+                       console.log('Thank you for not eating my delicious ice cream cone');
+                     });
+                }
+            },function(err){
 
-
+            })
+        },
         kx : function( options,successCallback,errorCallback ){
             httpServer.get( "Account/GetMessageList",{
                 id : options.id,
