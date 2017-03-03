@@ -34,7 +34,8 @@ angular.module("app")
 			})(key)
 		}
 	})
-	//搜索框获取焦点改变宽度
+
+	   //搜索框获取焦点改变宽度
 	$("#zsd_inputtxt").on("focus",function(){
 		$(".zsd_ss div").animate({width:"78%"},500)
 		$(".zsd_con").hide()
@@ -45,6 +46,8 @@ angular.module("app")
 		$(".zsd_ss div").animate({width:"100%"},500)
 		$(".zsd_con").show()
 	})	
+
+	
 })
 
 .directive("toggleClass",function(){
