@@ -2,15 +2,28 @@
 	
   <ion-content class="content">
    <!--  <img ng-src="{{chat.face}}" style="width: 64px; height: 64px"> -->
-   <div class="kc-top">
-   	<nav>
-   		<a ui-sref="kecheng.law" ui-sref-active="kc-bg"><p>法律<br/>硕士</p></a>
-   		<a ui-sref="kecheng.judicial" ui-sref-active="kc-bg"><p>司法<br/>考试</p></a>
-   		<a ui-sref="kecheng.fashuo" ui-sref-active="kc-bg"><p>法硕<br/>论坛</p></a>
-   		<a ui-sref="kecheng.tmall" ui-sref-active="kc-bg"><p>天猫<br/>书店</p></a>
-   	</nav>
-   </div>
-   <ion-nav-view></ion-nav-view>
+  
+    <div class="kc-top">
+      <!-- 导航 -->
+      <div>
+        <a ng-repeat="item in kechengTitle" ng-class="{ 'active' : data.current == item.id }" ng-click="actions({{item.id}},$index)"><span>{{item.title}}</span></a>
+        
+     </div> 
+    </div>
+    <div class="kc-context">
+      <ul class="lists"  ng-repeat="item in kechengTitle" ng-if="data.current == item.id">
+         <li ui-sref="details({id:d.id,category:d.category_id})" ng-repeat="d in listNav">
+            <div class="img"><img ng-src="http://119.10.11.121:8509/{{d.img_url}}"></div>
+            <div class="tex">
+               <span>{{d.title}}</span>
+               <span>说明描述</span>
+            </div>
+            <div class="money">{{d.price | currency : '￥'}}</div>
+         </li>        
+      </ul>
+      
+    </div>
+   <!-- <ion-nav-view></ion-nav-view> -->
   </ion-content>
  <footer-directive ng-show="true"></footer-directive>
 </ion-view>

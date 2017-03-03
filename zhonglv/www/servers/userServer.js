@@ -13,8 +13,33 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
     			errorCallback( error );
     		})
     	},
+
+        kechi : function( options,successCallback,errorCallback ){
+            httpServer.get( "Course/GetCourseList",{
+                user_id : options.user_id,
+                category_id : options.category_id,
+                pagesize : options.pagesize,
+                pageindex : options.pageindex 
+            },function( res ){
+                successCallback(res);
+            },function(error){
+                errorCallback( error );
+            })
+        },
+        detali : function( options,successCallback,errorCallback ){
+            httpServer.get( "Course/GetCourseMain",{
+                id : options.id,
+                user_id : options.user_id
+            },function( res ){
+                successCallback(res);
+            },function(error){
+                errorCallback( error );
+            })
+        },
+
         
         //登录
+
     	Login : function( options,successCallback,errorCallback ){
     		httpServer.post( "Account/Login",{
     			LoginName : options.userPhone,
