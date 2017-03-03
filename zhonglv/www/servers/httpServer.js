@@ -4,7 +4,7 @@ angular.module("app").factory( "httpServer",function( $http,$ionicLoading ){
 	var key = "2D7E7K96-DAC5-4526-96Y3-C60CKEC4U120";
 
 
-	//获得10位是加错
+	//获得10位时间戳
     var timestr = function() {
         var tmp = Date.parse(new Date()).toString();
         tmp = tmp.substr(0, 10);

@@ -1,53 +1,68 @@
 <ion-view view-title="题库" hide-back-button="true">
 	
-  <ion-content class="content has-header" scroll="false">
+  <ion-content class="content has-header" >
   <section class="tiku-content">
-		 <ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs>
-             <!--  <ion-slide ion-slide-tab-label="司法">
-			  	<nav class="tabs-nav">
-					<a href="javascript:;" class="on" ng-click="getCont()">历年<br/>真题</a>
-					<a href="javascript:;" ng-click="getCont()">分科<br/>真题</a>
-					<a href="javascript:;" ng-click="getCont()">模拟<br/>试卷</a>
-					<a href="javascript:;" ng-click="getCont()">题海<br/>实战</a>
-					<a href="javascript:;" ng-click="getCont()">主观<br/>题</a> 
-				<a href="javascript:;" ng-click="getCont($index)" ng-repeat="item in data" ng-bind-html='item.title | toTurnHtml' ui-sref=""></a> 
-			  	</nav>		
-				<section class="tabs-cont">
-					<ul class="list">
-						<li class="item">
-						  <div class="fr">
-						  		题数<span>0</span>
-								<i class="ion-clock chengsefont" ng-show="true"></i><time ng-show="true">120</time>
-						  </div>	
-						  2006
-						</li>
-					</ul>
-				</section>
-              </ion-slide>
-              <ion-slide ion-slide-tab-label="法硕">
-              	<nav class="tabs-nav">
-					<a href="javascript:;" class="on">历年<br/>真题</a>
-					<a href="javascript:;">分科<br/>真题</a>
-					<a href="javascript:;">考试<br/>分析</a>
-					<a href="javascript:;">模拟<br/>试卷</a>
-			  	</nav>		
-			  	</ion-slide>
-              <ion-slide ion-slide-tab-label="考研英语">	
-              	<nav class="tabs-nav">
-					<a href="javascript:;" class="on">历年<br/>真题</a>
-					<a href="javascript:;">题型<br/>训练</a>
-					<a href="javascript:;">模拟<br/>试卷</a>
-			  	</nav>	
-				</ion-slide> -->
-              <ion-slide ng-repeat="item in tikuNav" ion-slide-tab-label="{{item.title}}">
-				<nav class="tabs-nav">
-					<a href="javascript:;" class="on">历年<br/>真题</a>
-					<a href="javascript:;">模拟<br/>试卷</a>
-			  	</nav>	
-              </ion-slide>
-         </ion-slide-box>
+
+	 <ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs>
+         <!--  <ion-slide ion-slide-tab-label="司法">
+		  	<nav class="tabs-nav">
+				<a href="javascript:;" class="on" ng-click="getCont()">历年<br/>真题</a>
+				<a href="javascript:;" ng-click="getCont()">分科<br/>真题</a>
+				<a href="javascript:;" ng-click="getCont()">模拟<br/>试卷</a>
+				<a href="javascript:;" ng-click="getCont()">题海<br/>实战</a>
+				<a href="javascript:;" ng-click="getCont()">主观<br/>题</a> 
+			<a href="javascript:;" ng-click="getCont($index)" ng-repeat="item in data" ng-bind-html='item.title | toTurnHtml' ui-sref=""></a> 
+		  	</nav>		
+			<section class="tabs-cont">
+				<ul class="list">
+					<li class="item">
+					  <div class="fr">
+					  		题数<span>0</span>
+							<i class="ion-clock chengsefont" ng-show="true"></i><time ng-show="true">120</time>
+					  </div>	
+					  2006
+					</li>
+				</ul>
+			</section>
+          </ion-slide>
+          <ion-slide ion-slide-tab-label="法硕">
+          	<nav class="tabs-nav">
+				<a href="javascript:;" class="on">历年<br/>真题</a>
+				<a href="javascript:;">分科<br/>真题</a>
+				<a href="javascript:;">考试<br/>分析</a>
+				<a href="javascript:;">模拟<br/>试卷</a>
+		  	</nav>		
+		  	</ion-slide>
+          <ion-slide ion-slide-tab-label="考研英语">	
+          	<nav class="tabs-nav">
+				<a href="javascript:;" class="on">历年<br/>真题</a>
+				<a href="javascript:;">题型<br/>训练</a>
+				<a href="javascript:;">模拟<br/>试卷</a>
+		  	</nav>	
+			</ion-slide> -->
+          <ion-slide ng-repeat="item in arr" ion-slide-tab-label="{{item.title}}"  >
+
+			<nav class="tabs-nav"  navs ><!-- navs ng-class="{'true':'on','false':' '}[active]"--> 
+				<a href="javascript:;" ng-repeat="nav in item.Navs" ng-click="getList(nav.id)" ><span ng-hind="{{nav.title}}">{{nav.title}}</span></a>
+		  	</nav>	
+
+			<section class="tabs-cont">
+				 <ion-scroll>	
+				<ul class="list">
+					<li class="item" ng-repeat="items in dataCont" ui-sref='paper({year:items.title})' ng-click="goHideFoot()">
+					  <div class="fr">
+					  		题数<span>{{items.count}}</span>
+							<i class="ion-clock chengsefont" ng-show="true"></i><time ng-show="true">{{items.exam_time}}</time>
+					  </div>	
+					  <div class="fl">{{items.title}}</div>
+					</li>
+				</ul>
+				</ion-scroll>
+			</section>
+          </ion-slide>
+     </ion-slide-box>
   </section> 
   </ion-content>
 
- 
+ <footer-directive ng-show="true"></footer-directive>
 </ion-view>
