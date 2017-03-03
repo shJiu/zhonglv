@@ -345,7 +345,7 @@
 .zsd_con .zsd_con_list ol .ul_hide {
   display: none;
 }
-.zsd_con .zsd_con_list .ol_hide li {
+.zsd_con .zsd_con_list .ol_hide .zsd_con_list_tit {
   background: url("../../../img/zsd_showjt.jpg") no-repeat right center;
   background-position: 95% 50%;
 }

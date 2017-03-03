@@ -1,6 +1,10 @@
 angular.module("app").controller("tikuController",function($scope,$http,$timeout, $ionicLoading,$ionicSlideBoxDelegate,httpServer){
 	 // Setup the loader
 	 // dataCont
+	 $http.get("http://119.10.11.121:8587/Api/Question/GetQuestionCategory?user_id=1")	
+		.then(function(data){
+			console.log(data)
+		})
 	
 	///httpServer.get(url,data,successCallback, errorCallback )
 	httpServer.get("Question/GetQuestionCategory",{
