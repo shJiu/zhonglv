@@ -1,9 +1,7 @@
 angular.module("app")
 .controller("zhishidianController",function($scope,$http,httpServer,userServer,knowledgeServer){
 	var userId=userServer.getUserId()
-
 	$scope.viewMenu=[];
-
 	function getSubList(key,menuSubList){
 		for(var i=0;i<menuSubList.length;i++){
 			(function(i){
@@ -15,9 +13,7 @@ angular.module("app")
 				})
 			})(i)
 		}
-		
 	}
-
 	knowledgeServer.getTitleCategory({
 		user_id:userId
 	},function(data){
@@ -35,7 +31,7 @@ angular.module("app")
 		}
 	})
 
-	   //搜索框获取焦点改变宽度
+	//搜索框获取焦点改变宽度
 	$("#zsd_inputtxt").on("focus",function(){
 		$(".zsd_ss div").animate({width:"78%"},500)
 		$(".zsd_con").hide()

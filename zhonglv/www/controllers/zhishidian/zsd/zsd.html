@@ -11,33 +11,12 @@
 	<input type="text" placeholder="请输入关键字">
   </div>
   <div class="form-list padLR20">
-	<ul>
-		<li ui-sref="zsd-xq" nav-transition="none">
-			<div>第一章第一节</div>
+	<ul ng-repeat="item in RetValue">
+		<li ui-sref="zsd-xq({category_id:item.id})" nav-transition="none" >
+			<div>{{item.title}}</div>
 			<div></div>
 			<div>
-				<span>0/0</span>题>
-			</div>
-		</li>
-		<li ui-sref="zsd-xq" nav-transition="none">
-			<div>第一章第二节</div>
-			<div></div>
-			<div>
-				<span>0/0</span>题>
-			</div>
-		</li>
-		<li ui-sref="zsd-xq" nav-transition="none">
-			<div>第二章第一节</div>
-			<div></div>
-			<div>
-				<span>0/0</span>题>
-			</div>
-		</li>
-		<li ui-sref="zsd-xq" nav-transition="none">
-			<div>第二章第二节</div>
-			<div></div>
-			<div>
-				<span>0/0</span>题>
+				<span>{{item.count}}</span>题>
 			</div>
 		</li>
 	</ul>

@@ -103,14 +103,19 @@ angular.module("app").config(function($stateProvider,$urlRouterProvider){
 		controller:"zhuceCtrl"
 	})
 	.state("zsd",{
-		url:"/zsd",
+		url:"/zsd/:parent_id",
 		templateUrl:"controllers/zhishidian/zsd/zsd.html",
 		controller:"zsdController"
 	})
 	.state("zsd-xq",{
-		url:"/zsd-xq",
+		url:"/zsd-xq/:category_id",
 		templateUrl:"controllers/zhishidian/zsd-xq/zsd-xq.html",
 		controller:"zsdxqController"
+	})
+	.state("xq",{
+		url:"/xq/:id",
+		templateUrl:"controllers/zhishidian/xq/xq.html",
+		controller:"xqController"
 	})
 	.state("paper",{		//试卷详情
 		url:"/paper/:year",
