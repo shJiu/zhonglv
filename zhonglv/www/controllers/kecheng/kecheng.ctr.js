@@ -10,12 +10,7 @@ angular.module("app").controller("kechengController",function($scope,$http,$q,$t
 	},function(){
 		console.log("数据请求失败")
 	});
-	/*var deferred=$q.defer(),
-		promise=deferred.promise;
-
-	promise.then(function(){		
-		add(dataId)
-	})*/
+	
 	list(84);
 	//列表
 	function list(id){
