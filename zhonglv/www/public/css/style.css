@@ -53,57 +53,59 @@
 }
 .kc-top {
   width: 100%;
-  /* height:80px; */
+  /* padding:10px 10px 0 10px;*/
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
-.kc-top nav {
+.kc-top div {
   width: 100%;
   display: -webkit-box;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  /* padding: 5px 0; */
 }
-.kc-top nav a {
-  text-align: center;
-  color: #000;
-  display: block;
+.kc-top div a {
   -webkit-box-flex: 1;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: #000;
+  font-size: 1.4rem;
 }
-.kc-top nav a.kc-bg p {
+.kc-top div a.active {
   color: #fff;
   background: #ffcc00;
   border: 1px solid #ffcc00;
 }
-.kc-top nav a p {
+.kc-top div a span {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  padding-top: 6px;
+  margin-top: 3px;
 }
-.kc-top nav a i {
-  display: block;
-  font-size: 1.6rem;
-  margin-bottom: -10px;
-}
-.kc-top nav a span {
-  font-size: 1.4rem;
-}
+/* .kc-top .slidingTabs ul{
+	background: #fff;
+} */
 .scroll {
   width: 100%;
   height: 100%;
 }
 .lists {
   width: 100%;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
 }
 .lists li {
   width: 100%;
   display: flex;
-  margin: 10px 0;
+  /*margin:10px 0;*/
   border-bottom: 1px solid #ccc;
+  padding: 10px;
 }
 .lists li .img {
   width: 18.3%;
@@ -115,14 +117,16 @@
   padding: 0.5rem;
   padding-left: 25px;
   line-height: 25px;
+  font-size: 1.2rem;
 }
 .lists li .tex span {
   display: block;
 }
 .lists li .money {
-  padding-top: 25px;
+  padding-top: 10px;
   padding-left: 10px;
   color: orange;
+  font-size: 1.2rem;
 }
 /*详情页*/
 /* .details{
@@ -142,6 +146,7 @@
 .de-fen p span {
   display: inline-block;
   width: 45%;
+  font-size: 1.2rem;
 }
 .de-fen p span:nth-child(1) {
   margin-left: 10px;
@@ -152,7 +157,7 @@
 .de-fen p span b {
   width: 50px;
   height: 50px;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: inline-block;
   background: orange;
   line-height: 50px;
