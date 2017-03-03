@@ -78,7 +78,7 @@
   border: 1px solid #ccc;
   border-radius: 50%;
   color: #000;
-  font-size: 1.4rem;
+  font-size: 0.04rem;
 }
 .kc-top div a.active {
   color: #fff;
@@ -90,7 +90,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-top: 3px;
+  margin-top: 8px;
 }
 /* .kc-top .slidingTabs ul{
 	background: #fff;
@@ -105,10 +105,17 @@
 }
 .lists li {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   /*margin:10px 0;*/
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
   border-bottom: 1px solid #ccc;
   padding: 10px;
+}
+.lists li div {
+  text-align: center;
+  -webkit-box-flex: 1;
 }
 .lists li .img {
   width: 18.3%;
@@ -129,7 +136,6 @@
   padding-top: 10px;
   padding-left: 10px;
   color: orange;
-  font-size: 1.2rem;
 }
 /*详情页*/
 /* .details{
