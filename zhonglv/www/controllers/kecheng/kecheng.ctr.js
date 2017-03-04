@@ -22,7 +22,7 @@ angular.module("app").controller("kechengController",function($scope,$http,$q,$t
 			pageindex:5
 		},function(data){
 			if(data.data.RetValue==null){
-				alert("没有数据");
+				alert("暂时没有课程");
 			}else{
 				//console.log(data.data.RetValue);
 				$scope.listNav=data.data.RetValue;

@@ -13,7 +13,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
     			errorCallback( error );
     		})
     	},
-
+        //课程列表
         kechi : function( options,successCallback,errorCallback ){
             httpServer.get( "Course/GetCourseList",{
                 user_id : options.user_id,
@@ -26,6 +26,7 @@ angular.module("app").factory( "userServer",function( httpServer,$ionicPopup,$st
                 errorCallback( error );
             })
         },
+        //详情
         detali : function( options,successCallback,errorCallback ){
             httpServer.get( "Course/GetCourseMain",{
                 id : options.id,
