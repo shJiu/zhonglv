@@ -10,12 +10,11 @@ angular.module("app").controller("detailsController",function($scope,$http,$time
 	},function(){
 		console.log("数据错误");
 	})
-	
 
-
-
-
-
-
-	
+	//点击购买
+	$scope.purchase=function(id){
+		console.log(id)
+		alert("暂时不能购买");
+	}
+		
 })

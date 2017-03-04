@@ -1,10 +1,15 @@
 <ion-view view-title="详情">
+  <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button  nav-transition="none">
+       {{"返回"}}
+      </ion-nav-back-button>
+  </ion-nav-bar>
   <ion-content class="details">
       <div class="de-box">
         <img ng-src="http://119.10.11.121:8509/{{xqList.img_url}}">
       </div>
       <div class="de-fen">
-        <p><span>>>{{xqList.title}}</span><span>￥：<b>{{xqList.price}}</b></span></p>
+        <p><span>>>{{xqList.title}}</span><span>￥：<b>{{xqList.price | number:0}}</b></span></p>
       </div>
       <div class="de-content padLR20 padTB">
         <div ng-bind-html="xqList.content"></div>
@@ -14,5 +19,7 @@
         <p>三家分晋烧开后给大家和价格还是健康韩国抠脚大汉科技感分开健身房结果还是价格会尽快是否可见阿浩丰科技还是高科技看坚实的复活节阿虎人生规划江山如画</p> -->
       </div>
   </ion-content>
-  
+  <div class="bar bar-footer btn-foot">
+    <button class='de-btn' ng-click="purchase(xqList.id)">购买</button>
+  </div>
 </ion-view>
