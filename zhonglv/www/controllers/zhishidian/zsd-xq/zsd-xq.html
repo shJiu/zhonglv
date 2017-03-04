@@ -1,4 +1,4 @@
-<ion-view>
+<ion-view view-title="知识点列表">
 	<ion-nav-bar class="bar-stable">
       <ion-nav-back-button  nav-transition="none">
        {{"返回"}}
@@ -6,9 +6,28 @@
   </ion-nav-bar>
   <ion-content class="content">
    <!--  <img ng-src="{{chat.face}}" style="width: 64px; height: 64px"> -->
-  <div class="content-form huiseBg">
-      <p ui-sref="xq({id:Ret.id})">{{Ret.title}}</p>
+   <div class="content-form huiseBg" ng-if="Ret.list.length==0">
+      <p>{{Ret.title}}</p>
   </div>
+  <div class="content-form huiseBg" ng-if="Ret.list.length>=1">
+      <p ui-sref="xq({id:item.id})">{{Ret.title}}</p>
+
+      
+  </div>
+  <div class="one" ui-sref="xq({id:i.id})" ng-repeat="i in Ret.list">{{$index+1}}</div>
   </ion-content>
 
 </ion-view>
+<style>
+  .one{
+    margin:0 auto;
+    width: 40px;
+    height: 40px;
+    background: #ffcc33;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin-top: 20px;
+  }
+</style>

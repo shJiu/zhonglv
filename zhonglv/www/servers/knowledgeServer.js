@@ -22,6 +22,15 @@ angular.module("app").factory( "knowledgeServer",function( httpServer,$ionicPopu
                 user_id:opt.user_id,
                 parent_id:opt.parent_id
             },function( data ){
+                if(data.data.result==-1){
+                    var alertPopup = $ionicPopup.alert({
+                       title: '提示',
+                       template: data.data.description
+                     });
+                     alertPopup.then(function(res) {
+                       console.log('Thank you for not eating my delicious ice cream cone');
+                     });
+                }
                 successCallback(data.data);
             })
         },
@@ -33,13 +42,14 @@ angular.module("app").factory( "knowledgeServer",function( httpServer,$ionicPopu
                 successCallback(data.data);
             })
         },
-        GetKnowledgeMain : function(opt,successCallback){
-            httpServer.get( "Knowledge/GetKnowledgeMain",{
+        GetKnowledgeMain:function(opt,successCallback){
+             httpServer.get( "Knowledge/GetKnowledgeMain",{
                 user_id:opt.user_id,
                id:opt.id
             },function( data ){
                 successCallback(data.data);
             })
         }
+       
     }
 } )

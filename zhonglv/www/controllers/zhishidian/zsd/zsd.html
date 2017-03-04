@@ -11,8 +11,18 @@
 	<input type="text" placeholder="请输入关键字">
   </div>
   <div class="form-list padLR20">
+
 	<ul ng-repeat="item in RetValue">
-		<li ui-sref="zsd-xq({category_id:item.id})" nav-transition="none" >
+	
+		<li ng-if="item.is_layer==0" ui-sref="zsd-xq({category_id:item.id})" nav-transition="none" >
+			<div>{{item.title}}</div>
+			<div></div>
+			<div>
+				<span>{{item.count}}</span>题>
+			</div>
+		</li>
+
+		<li ng-if="item.is_layer==1" ui-sref="zsd({parent_id:item.id})" nav-transition="none" >
 			<div>{{item.title}}</div>
 			<div></div>
 			<div>
@@ -20,6 +30,7 @@
 			</div>
 		</li>
 	</ul>
+
   </div>
   </ion-content>
 </ion-view>

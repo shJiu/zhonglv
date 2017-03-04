@@ -365,6 +365,7 @@
   display: -webkit-box;
   -webkit-box-align: center;
   -webkit-box-pack: center;
+  margin-top: 40px;
 }
 .content-form input {
   width: 90%;

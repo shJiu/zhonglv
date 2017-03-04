@@ -6,11 +6,20 @@
   </ion-nav-bar>
   <ion-content class="content">
    <!--  <img ng-src="{{chat.face}}" style="width: 64px; height: 64px"> -->
-  <div class="xq">
-      <p>{{data.title}}</p>
-      <p>{{data.answer}}</p>
-      <p>{{data.content}}</p>
+  <div class="xq" ng-bind-html="data.answer">
+      {{data.answer}}
   </div>
   </ion-content>
 
 </ion-view>
+<style>
+  .xq{
+    margin-top: 40px;
+  }
+  p{
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 25px;
+  }
+
+</style>
