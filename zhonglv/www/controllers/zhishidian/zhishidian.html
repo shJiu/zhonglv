@@ -13,7 +13,7 @@
 				<ol ng-repeat="menuItem in item.menu"  toggle-class="ol_hide">
 					<li class="zsd_con_list_tit padLR20">{{menuItem.title}}</li>
 					<ul class="padLR20 ul_hide">
-						<li ui-sref="zsd" ng-repeat="subMenu in menuItem.subMenu">{{subMenu.title}}<span><b>{{subMenu.count}}</b>/<i>293</i>题 ></span></li>
+						<li ui-sref="zsd({parent_id:subMenu.id})" ng-repeat="subMenu in menuItem.subMenu">{{subMenu.title}}<span><b>{{subMenu.count}}</b>/<i>293</i>题 ></span></li>
 					</ul>
 				</ol>
 			</div>				

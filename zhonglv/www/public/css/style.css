@@ -78,6 +78,11 @@
   color: #444;
   margin: 0 1%;
   border-radius: 50%;
+<<<<<<< HEAD
+=======
+  color: #000;
+  font-size: 0.04rem;
+>>>>>>> e7e868def748f96bfec55178fadd1f75c609032d
 }
 .kc-top div a.active {
   background: #FF9B00;
@@ -87,8 +92,16 @@
   color: #fff;
 }
 .kc-top div a span {
+<<<<<<< HEAD
   display: block;
   width: 26px;
+=======
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 8px;
+>>>>>>> e7e868def748f96bfec55178fadd1f75c609032d
 }
 .scroll {
   width: 100%;
@@ -99,10 +112,22 @@
 }
 .lists li {
   width: 100%;
+<<<<<<< HEAD
   display: flex;
+=======
+  /* display: flex; */
+  /*margin:10px 0;*/
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+>>>>>>> e7e868def748f96bfec55178fadd1f75c609032d
   border-bottom: 1px solid #ccc;
   padding: 10px;
   position: relative;
+}
+.lists li div {
+  text-align: center;
+  -webkit-box-flex: 1;
 }
 .lists li .img {
   width: 18.3%;
@@ -123,10 +148,13 @@
   /* padding-top: 10px;
 			padding-left: 10px; */
   color: orange;
+<<<<<<< HEAD
   font-size: 12px;
   position: absolute;
   right: 10px;
   top: 17px;
+=======
+>>>>>>> e7e868def748f96bfec55178fadd1f75c609032d
 }
 /*详情页*/
 .de-box {
@@ -245,7 +273,7 @@
 }
 .content .tiku-content .tabs-nav > a span {
   display: block;
-  width: 26px;
+  width: 28px;
 }
 .content .tiku-content .tabs-cont .list .item {
   padding: 10px 20px;
@@ -392,6 +420,14 @@
 }
 .form-list ul li div:nth-child(2) {
   -webkit-box-flex: 1;
+}
+.xq {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+.xq p {
+  margin-bottom: 10px;
 }
 .my_photo {
   width: 100%;
@@ -613,6 +649,12 @@
 }
 /* 公共样式 */
 /* color */
+html {
+  font-size: 100px;
+}
+body * {
+  font-size: .14rem;
+}
 .chengsefont {
   color: #FF9B00;
 }
